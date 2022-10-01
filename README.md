@@ -1,4 +1,4 @@
-# linux-server-management
+# Linux Server Management
 
 - [Service Management - systemd](https://google.com)
 - [Cron jobs](https://google.com)
