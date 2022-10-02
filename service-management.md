@@ -2,11 +2,8 @@
 
 # Service Management
 
-**systemctl** is using for service management
-
-**journalctl** is using for service log management
-
 ## SystemCtl
+**systemctl** is using for service management.
 
 #### Services list filtered with nginx
 ```Bash
@@ -26,6 +23,8 @@ $ systemctl restart kastrel.alikadir.com.service
 general service path ```/etc/systemd/system/kastrel.alikadir.com.service```
 
 ## JournalCtl
+
+**journalctl** is using for service log management.
 
 #### Get logs
 -f = follow
