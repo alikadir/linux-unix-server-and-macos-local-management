@@ -2,7 +2,7 @@
 
 # SSH
 
-### connect with ssh 
+### Connect with ssh 
 
 ```bash
 $ ssh root@111.111.111.11
@@ -10,7 +10,44 @@ $ ssh root@111.111.111.11
 
 _don't forget activate password manager on iTerm_
 
-### ssh key generator
+### SSH key generator
+
 ```bash
 $ ssh-keygen
+```
+
+### Install ssh on ubuntu
+
+```bash
+$ sudo apt update
+$ sudo apt install openssh-server
+```
+
+### Start ssh service 
+
+```bash
+$ sudo systemctl status ssh
+$ sudo systemctl start ssh
+```
+
+### Allow ssh port at firewall
+
+```bash
+$ sudo ufw allow ssh
+```
+
+### Detect server IP adress
+
+the ip for connect to this server
+
+```bash
+$ ip a
+```
+
+### Get server info (OS-CPU-RAM-DISK)
+
+hardware list
+
+```bash
+$ lshw
 ```
