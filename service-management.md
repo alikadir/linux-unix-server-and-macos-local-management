@@ -5,12 +5,12 @@
 ## SystemCtl
 **systemctl** is using for service management.
 
-#### Services list filtered with nginx
+### Services list filtered with nginx
 ```bash
 $ systemctl status | grep nginx
 ```
 
-#### Start, stop and restart service
+### Start, stop and restart service
 ```bash
 $ systemctl start kastrel.alikadir.com.service
 ```
@@ -26,7 +26,7 @@ general service path ```/etc/systemd/system/kastrel.alikadir.com.service```
 
 **journalctl** is using for service log management.
 
-#### Get logs
+### Get logs
 -f = follow
 
 -u = unit
