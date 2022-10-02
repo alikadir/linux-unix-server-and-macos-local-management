@@ -3,7 +3,7 @@
 - [Service Management - systemd](service-management.md)
 - [Cron jobs](cron-jobs.md)
 - [Package Management - apt](package-management.md)
-- *[Directory Structure](https://google.com)
+- [Directory Structure](directory-structure.md)
 - [Docker](docker.md)
 - *[DotNet on Kastrel - systemd](https://google.com)
 - [NodeJS on PM2](node-pm2.md)
