@@ -16,11 +16,19 @@ _don't forget activate password manager on iTerm_
 $ ssh-keygen
 ```
 
-### Install ssh on ubuntu
+### Install ssh on ubuntu server
+
+SSH app includes **sFTP** app
 
 ```bash
 $ sudo apt update
 $ sudo apt install openssh-server
+```
+
+### Connect with sftp 
+
+```bash
+$ sftp root@111.111.111.11
 ```
 
 ### Start ssh service 
