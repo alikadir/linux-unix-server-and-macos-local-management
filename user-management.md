@@ -1,15 +1,13 @@
 [<< Back](README.md)
-### User Management
 
-which user logged in
+# User Management
 
+#### which user logged in
 ```Bash
 $ whoami
 ```
 
-
-change password
-
+#### change password
 ```Bash
 $ passwd <user> 
 ```
