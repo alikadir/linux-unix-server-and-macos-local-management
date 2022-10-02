@@ -4,25 +4,25 @@
 
 for install docker on Ubuntu visit [link](https://docs.docker.com/engine/install/ubuntu/) 
 
-#### Get all containers
+### Get all containers
 
 ```bash
 $ docker ps -a
 ```
 
-#### Remove container
+### Remove container
 
 ```bash
 $ docker remove postgresql
 ```
 
-#### Rename container
+### Rename container
 
 ```bash
 $ docker rename old_name new_name
 ```
 
-#### Start, stop and restart container
+### Start, stop and restart container
 
 ```bash
 $ docker start postgresql
@@ -36,7 +36,7 @@ $ docker stop postgresql
 $ docker restart postgresql
 ```
 
-#### Show container logs
+### Show container logs
 
 ```bash
 $ docker logs postgresql
