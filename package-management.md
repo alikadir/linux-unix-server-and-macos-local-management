@@ -4,34 +4,34 @@
 
 apt and apt-get are the same, apt is new, apt-get is old version
 
-#### Install a package 
+### Install a package 
 ```bash
 $ apt install nodejs
 ```
 
-#### Remove a package 
+### Remove a package 
 ```bash
 $ apt remove nodejs
 ```
 
-#### List all installed packages 
+### List all installed packages 
 ```bash
 $ apt list
 ```
 
-#### Refreshes repository index 
+### Refreshes repository index 
 
 ```bash
 $ sudo apt update
 ```
 
-#### Upgrade all package to new version 
+### Upgrade all package to new version 
 
 ```bash
 $ sudo apt upgrade
 ```
 
-#### Upgrades packages with auto-handling of dependencies 
+### Upgrades packages with auto-handling of dependencies 
 
 ```bash
 $ sudo apt full-upgrade
