@@ -6,18 +6,18 @@
 **systemctl** is using for service management.
 
 #### Services list filtered with nginx
-```Bash
+```bash
 $ systemctl status | grep nginx
 ```
 
 #### Start, stop and restart service
-```Bash
+```bash
 $ systemctl start kastrel.alikadir.com.service
 ```
-```Bash
+```bash
 $ systemctl stop kastrel.alikadir.com.service
 ```
-```Bash
+```bash
 $ systemctl restart kastrel.alikadir.com.service
 ```
 general service path ```/etc/systemd/system/kastrel.alikadir.com.service```
@@ -31,6 +31,6 @@ general service path ```/etc/systemd/system/kastrel.alikadir.com.service```
 
 -u = unit
 
-```Bash
+```bash
 $ journalctl -fu kastrel.alikadir.com.service (-f follow -u unit) servis loglarini alabilmek icin 
 ```
