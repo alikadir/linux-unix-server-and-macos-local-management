@@ -2,7 +2,7 @@
 
 # File Transfer
 
-#### Transfer with secure cp on local machine
+### Transfer with secure cp on local machine
 
 -r = To copy directories recursively.
 
@@ -13,21 +13,21 @@ $ scp -rp /Users/alikadir/Desktop/PROJECTS/my-website/* root@111.111.111.111:/va
 ```
 
 
-#### Transfer with sFtp
+## Transfer with sFtp
 
-##### connect to server with sftp
+### Connect to server with sftp
 
 ```bash
 $ sftp root@111.111.111.111
 ```
 
-##### redirect destination path on server
+### Redirect destination path on server
 
 ```bash
 sftp> cd /var/www/alikadir.com
 ```
 
-##### copy files from local machine to the current directory on the server
+### Copy files from local machine to the current directory on the server
 
 -r = To copy directories recursively.
 
