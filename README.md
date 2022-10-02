@@ -12,4 +12,4 @@
 - [Firewall](https://google.com)
 - [sFTP](https://google.com)
 - [SSH](https://google.com)
-- [User Managemet](/user-mangement.md)
+- [User Managemet](user-management.md)
