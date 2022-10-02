@@ -43,7 +43,10 @@ then, change a line you want with following line in vim editor
 
 ```
 
-#### sample scenario
+#### sample scenarios
+```bash
+* * * * * echo "hi!"
+```
 ```bash
 @reboot sleep 60 && /bin/python3 / home/Documents/python-scripts/production/files_auto
 ```
