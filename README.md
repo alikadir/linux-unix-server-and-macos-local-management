@@ -10,6 +10,6 @@
 - [Nginx Management](https://google.com)
 - [Certbot - SSL Certificate Management](https://google.com)
 - [Firewall](https://google.com)
-- [sFTP](https://google.com)
-- [SSH](https://google.com)
+- [File Transfer with sFTP and scp](file-transfer.md)
+- [SSH](ssh.md)
 - [User Managemet](user-management.md)
