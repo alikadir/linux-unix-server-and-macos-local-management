@@ -2,7 +2,7 @@
 
 - [Service Management - systemd](service-management.md)
 - *[Cron jobs](https://google.com)
-- *[Package Management - apt-get](https://google.com)
+- *[Package Management - apt](https://google.com)
 - *[Directory Structure](https://google.com)
 - [Docker](docker.md)
 - *[DotNet on Kastrel - systemd](https://google.com)
