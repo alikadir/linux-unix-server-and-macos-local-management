@@ -6,42 +6,42 @@ UFW, or Uncomplicated Firewall, is an interface to [iptables](https://en.wikiped
 
 #### Install ufw 
 
-```Bash
+```bash
 $ sudo apt install ufw
 ```
 
 #### Enable ufw
 
-```Bash
+```bash
 $ sudo ufw enable
 ```
 
 #### Status 
 
-```Bash
+```bash
 $ sudo ufw status
 ```
 
 #### Allow Port or Application 
 
-```Bash
+```bash
 $ sudo ufw allow 22
 ```
-```Bash
+```bash
 $ sudo ufw allow ssh
 ```
 
 #### Deny Port or Application 
 
-```Bash
+```bash
 $ sudo ufw deny 22
 ```
-```Bash
+```bash
 $ sudo ufw deny ssh
 ```
 
 #### Remove Rule 
 
-```Bash
+```bash
 $ sudo ufw delete allow 22
 ```
