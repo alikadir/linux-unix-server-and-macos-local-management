@@ -1,7 +1,7 @@
 # Linux Server Management
 
 - [Service Management - systemd](service-management.md)
-- *[Cron jobs](https://google.com)
+- [Cron jobs](cron-jobs.md)
 - *[Package Management - apt](https://google.com)
 - *[Directory Structure](https://google.com)
 - [Docker](docker.md)
