@@ -8,7 +8,7 @@
 
 -p = Preserves files modification and access times.
 
-```Bash
+```bash
 $ scp -rp /Users/alikadir/Desktop/PROJECTS/my-website/* root@111.111.111.111:/var/www/alikadir.com
 ```
 
@@ -17,13 +17,13 @@ $ scp -rp /Users/alikadir/Desktop/PROJECTS/my-website/* root@111.111.111.111:/va
 
 ##### connect to server with sftp
 
-```Bash
+```bash
 $ sftp root@111.111.111.111
 ```
 
 ##### redirect destination path on server
 
-```Bash
+```bash
 sftp> cd /var/www/alikadir.com
 ```
 
@@ -31,6 +31,6 @@ sftp> cd /var/www/alikadir.com
 
 -r = To copy directories recursively.
 
-```Bash
+```bash
 sftp> put -r /Users/alikadir/Desktop/PROJECTS/my-website/*
 ```
