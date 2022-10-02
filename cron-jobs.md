@@ -4,12 +4,12 @@
 
 Cron jobs manage with **crontab** command. Cron job settings helper [web site](https://crontab.guru)
 
-#### show existing configuration for current user  
+### Show existing configuration for current user  
 ```bash
 $ crontab -l
 ```
 
-#### edit existing configuration for current user  
+### Edit existing configuration for current user  
 ```bash
 $ crontab -e
 ```
@@ -43,7 +43,7 @@ then, change a line you want with following line in vim editor
 
 ```
 
-#### sample scenarios
+### Sample scenarios
 ```bash
 * * * * * echo "hi!"
 ```
@@ -51,7 +51,7 @@ then, change a line you want with following line in vim editor
 @reboot sleep 60 && /bin/python3 / home/Documents/python-scripts/production/files_auto
 ```
 
-#### remove existing configuration for current user  
+### Remove existing configuration for current user  
 ```bash
 $ crontab -r
 ```
