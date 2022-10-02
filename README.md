@@ -9,7 +9,7 @@
 - [NodeJS on PM2](https://google.com)
 - [Nginx Management](https://google.com)
 - [Certbot - SSL Certificate Management](https://google.com)
-- [Firewall](https://google.com)
+- [Firewall](firewall.md)
 - [File Transfer with sFTP and scp](file-transfer.md)
 - [SSH](ssh.md)
 - [User Managemet](user-management.md)
