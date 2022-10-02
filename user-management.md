@@ -2,12 +2,12 @@
 
 # User Management
 
-#### which user logged in
-```Bash
+### which user logged in
+```bash
 $ whoami
 ```
 
-#### change password
-```Bash
+### change password
+```bash
 $ passwd <user> 
 ```
