@@ -13,6 +13,7 @@ $ passwd <user>
 ```
 
 ### Change password to 4 char 
+before unloack user with -u parameter then quickly change password 
 ```bash
 $ sudo passwd -u alikadir
 passwd: password expiry information changed.
