@@ -5,7 +5,7 @@
 - [Package Management - apt](package-management.md)
 - [Directory Structure](directory-structure.md)
 - [Docker](docker.md)
-- [DotNet on Kestrel - systemd](dotnet-kestrel.md)
+- [Dotnet on Kestrel - systemd](dotnet-kestrel.md)
 - [NodeJS on PM2](node-pm2.md)
 - *[Nginx Management](https://google.com)
 - *[Certbot - SSL Certificate Management](https://google.com)
