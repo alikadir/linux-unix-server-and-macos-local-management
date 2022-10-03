@@ -61,4 +61,6 @@ $ systemctl start kestrel.alikadir.com.service
 ```
 [Go another commands](service-management.md) for service management 
 
+now working the app on http://localhost:5000
+
 
