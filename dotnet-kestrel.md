@@ -34,6 +34,10 @@ $ cd <project_path>/bin/Release/net6.0/publish/
 $ touch /etc/systemd/system/kestrel.alikadir.com.service
 ```
 
+```bash
+$ vim /etc/systemd/system/kestrel.alikadir.com.service
+```
+
 add following configuration to above file
 
 ```bash
