@@ -2,17 +2,17 @@
 
 # User Management
 
-### which user logged in
+### Which user logged in
 ```bash
 $ whoami
 ```
 
-### change password
+### Change password
 ```bash
 $ passwd <user> 
 ```
 
-### change password to 4 char 
+### Change password to 4 char 
 ```bash
 $ sudo passwd -u alikadir
 passwd: password expiry information changed.
