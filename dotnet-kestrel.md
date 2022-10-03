@@ -57,7 +57,8 @@ Environment=CONNECTIONSTRING="Server=localhost;Port=5432;Database=alikadir-websi
 WantedBy=multi-user.target
 ```
 ```bash
-systemctl start kestrel.alikadir.com.service
+$ systemctl start kestrel.alikadir.com.service
 ```
 [Go another commands](service-management.md) for service management 
+
 
