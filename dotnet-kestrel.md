@@ -2,7 +2,8 @@
 
 # Dotnet on Kestrel
 
-### Install dotnet
+## Install Dotnet via Apt
+
 ```bash
 $ sudo apt update
 $ sudo apt install dotnet6
@@ -16,7 +17,20 @@ $ echo 'export PATH=$PATH:$HOME/.dotnet' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
-### Build project
+## Install Dotnet via Snap
+
+```bash
+$ sudo snap install dotnet-sdk --classic
+```
+or
+```bash
+$ sudo snap install dotnet-runtime-60
+```
+
+[for more package manager (Apt or Snap) info](package-management.md)
+
+
+### Build Dotnet project 
 ```bash
 $ cd "project_path"
 $ dotnet publish -c Release
