@@ -8,7 +8,7 @@
 - [Dotnet on Kestrel - systemd](dotnet-kestrel.md)
 - [NodeJS on PM2](node-pm2.md)
 - *[Nginx Management](https://google.com)
-- *[Certbot - SSL Certificate Management](https://google.com)
+- [SSL Certificate Management - certbot](ssl-certificate-management.md)
 - [Firewall](firewall.md)
 - [File Transfer with sFTP and scp](file-transfer.md)
 - [SSH](ssh.md)
