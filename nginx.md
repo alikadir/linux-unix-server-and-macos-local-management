@@ -88,7 +88,7 @@ server {
 }
 ```
 
-for [SSL certificate configuration](ssl-management.md) on Nginx
+for [SSL certificate configuration](ssl-certificate-management.md) on Nginx
 
 ### Link config file to sites-enabled directory
 
