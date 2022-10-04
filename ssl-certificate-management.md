@@ -143,7 +143,7 @@ Certificate will expire on 2023-01-02. (3 months later)
 
 run following command for renew certificate before expire 
 
---dry-run = just simulate and get info installed certificates 
+--dry-run = just simulate renew operation and get info installed certificates 
 
 ```bash
 $ sudo certbot renew --dry-run
@@ -179,6 +179,6 @@ No renewals were attempted.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ```
 
-I may setup a cron job with "certbot renew" command and check periodically 
+I may setup a cron job with "certbot renew" command and check periodically.
 
 
