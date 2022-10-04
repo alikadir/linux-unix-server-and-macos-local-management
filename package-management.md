@@ -22,6 +22,7 @@ $ sudo apt install snapd
 ```bash
 $ snap find "Media Player"
 ```
+or [online search package](https://snapcraft.io/store)
 
 ### Install a package in Snap
 
