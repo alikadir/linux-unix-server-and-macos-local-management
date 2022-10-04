@@ -88,6 +88,8 @@ server {
 }
 ```
 
+for [SSL certificate configuration](ssl-management.md) on Nginx
+
 ### Link config file to sites-enabled directory
 
 -s = symbolic or soft link [for more info](https://linuxize.com/post/how-to-create-symbolic-links-in-linux-using-the-ln-command/)
