@@ -23,12 +23,6 @@ $ sudo apt install snapd
 $ snap find "Media Player"
 ```
 
-### Get Info for a package in Snap
-
-```bash
-$ snap info vlc
-```
-
 ### Install a package in Snap
 
 ```bash
@@ -44,16 +38,22 @@ $ sudo snap install node --classic
 $ snap list
 ```
 
-### Remove Package installed by Snap
+### Get Info for a package in Snap
 
 ```bash
-$ sudo snap remove vlc
+$ snap info vlc
 ```
 
 ### Update Package installed by Snap
 
 ```bash
 $ sudo snap refresh vlc
+```
+
+### Remove Package installed by Snap
+
+```bash
+$ sudo snap remove vlc
 ```
 
 ## Apt Package Manager
