@@ -51,10 +51,9 @@ $ touch /etc/nginx/sites-available/alikadir.com
 
 then write following config for **plain html website** in the config file
 
-```bash
+```
 server {
         listen 80;
-        listen [::]:80;
 
         root /var/www/alikadir.com;
         index index.html index.htm index.nginx-debian.html;
@@ -67,9 +66,37 @@ server {
 }
 ```
 
+or write following config for **proxy website (dotnet or nodejs)** in the config file
+
+```
+server {
+       server_name alikadir.com www.alikadir.com;
+       location /
+       {
+       proxy_pass http://localhost:3000;
+       proxy_http_version 1.1;
+       proxy_set_header Upgrade $http_upgrade;
+       proxy_set_header Connection keep-alive;
+       proxy_set_header Host $host;
+       proxy_cache_bypass $http_upgrade;
+       }
+
+}
+server {
+      server_name alikadir.com www.alikadir.com;
+      listen 80;
+}
+```
+
 ### Link config file to sites-enabled directory
 ```bash
 $ sudo ln -s /etc/nginx/sites-available/alikadir.com /etc/nginx/sites-enabled/
 ```
 
-### 
+### Logs
+```/var/log/nginx/access.log``` = Every request to your web server is recorded in this log file unless Nginx is configured to do otherwise.
+```/var/log/nginx/error.log``` = Any Nginx errors will be recorded in this log.
+
+```bash
+$ less /var/log/nginx/access.log
+```
