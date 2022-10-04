@@ -89,6 +89,9 @@ server {
 ```
 
 ### Link config file to sites-enabled directory
+
+-s = symbolic or soft link [for more info](https://linuxize.com/post/how-to-create-symbolic-links-in-linux-using-the-ln-command/)
+
 ```bash
 $ sudo ln -s /etc/nginx/sites-available/alikadir.com /etc/nginx/sites-enabled/
 ```
