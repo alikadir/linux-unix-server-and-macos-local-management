@@ -7,7 +7,7 @@
 - [Docker](docker.md)
 - [Dotnet on Kestrel](dotnet-kestrel.md)
 - [NodeJS on PM2](node-pm2.md)
-- *[Nginx Management](https://google.com)
+- [Nginx Management](nginx.md)
 - [SSL Certificate Management - certbot](ssl-certificate-management.md)
 - [Firewall](firewall.md)
 - [File Transfer with sFTP and scp](file-transfer.md)
