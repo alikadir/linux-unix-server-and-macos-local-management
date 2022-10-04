@@ -78,7 +78,6 @@ Nginx site configuration **before** call certbot command
 
  ```bash
  server {
-        #root /var/www/api-alikadir;
         server_name api.alikadir.com;
         location /
         {
