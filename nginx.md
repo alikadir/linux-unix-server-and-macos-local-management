@@ -100,6 +100,8 @@ $ sudo ln -s /etc/nginx/sites-available/alikadir.com /etc/nginx/sites-enabled/
 ```/var/log/nginx/access.log``` = Every request to your web server is recorded in this log file unless Nginx is configured to do otherwise.
 ```/var/log/nginx/error.log``` = Any Nginx errors will be recorded in this log.
 
+for read large log file
+
 ```bash
 $ less /var/log/nginx/access.log
 ```
