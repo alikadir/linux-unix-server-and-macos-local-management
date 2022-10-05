@@ -51,6 +51,7 @@ $ sudo adduser alikadir sudo
 
 ### Delete and remove user 
 -r = to remove the user’s home directory and mail spool.
+
 -f = to forcefully remove the user account, even if the user is still logged in or if there are running processes that belong to the user.
 
 ```bash
