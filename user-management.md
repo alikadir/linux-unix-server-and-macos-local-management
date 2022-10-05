@@ -17,7 +17,7 @@ before unloack user with -u parameter then quickly change password
 ```bash
 $ sudo passwd -u alikadir
 passwd: password expiry information changed.
-$ sudo passwd parallels
+$ sudo passwd alikadir
 New password: 1234
 BAD PASSWORD: The password is shorter than 8 characters
 Retype new password: 1234
