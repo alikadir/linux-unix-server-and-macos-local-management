@@ -107,3 +107,18 @@ for read large log file
 ```bash
 $ less /var/log/nginx/access.log
 ```
+
+### Troubleshooting
+
+#### 413 – Request Entity Too Large
+
+Add that line in following Nginx config file
+
+```
+# set client body size to 2M #
+client_max_body_size 2M;
+```
+
+```bash
+$ vim /etc/nginx/nginx.conf
+```
