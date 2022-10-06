@@ -2,6 +2,36 @@
 
 # User Management
 
+user folder is in /home
+```
+/home
+ ├──── exapmle-user  [error opening dir]
+ ├──── alikadir
+       ├──── Desktop
+       ├──── Documents
+       ├──── Downloads
+       ├──── Music
+       ├──── Pictures
+       ├──── Public
+       ├──── Templates
+       ├──── Videos
+ └──── parallels
+       ├──── Desktop
+       ├──── Documents
+       ├──── Downloads
+       ├──── Music
+       ├──── Pictures
+       ├──── Public
+       ├──── Templates
+       ├──── Videos
+       ├──── dotnet-install.sh
+       ├──── dotnet.tar.gz
+       └──── snap
+             └──── node
+                   └──── current -> 6747
+
+24 directories, 3 files
+```
 
 ### Get user list 
 get user list from /etc/passwd file, but that user list structure very complex
