@@ -77,3 +77,11 @@ $ pm2 logs
 $ pm2 monit
 ```
 
+## Every changes running project files 
+
+[PM2][WARN] Current process list is not synchronized with saved list. App next-js differs. Type 'pm2 save' to synchronize.
+
+```bash
+pm2 save
+```
+
