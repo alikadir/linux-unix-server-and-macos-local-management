@@ -99,8 +99,7 @@ server {
  Nginx site configuration **after** call certbot command
  
  
- ```
-                                                                                                              16,25         All
+```                                                                                                          16,25         All
 server {
         #root /var/www/api-alikadir;
         server_name api.alikadir.com;
@@ -120,10 +119,6 @@ server {
     include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
 
-}
-server {
-       server_name api.alikadir.com;
-       listen 80;
 }
 server {
     if ($host = api.alikadir.com) {
