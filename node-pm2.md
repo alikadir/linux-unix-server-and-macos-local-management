@@ -79,6 +79,12 @@ $ pm2 monit
 
 ## Every changes running project files 
 
+```bash
+$ npm run build
+$ pm2 reload next-js 
+```
+reload = As opposed to restart, which kills and restarts the process, reload achieves a 0-second-downtime reload.
+
 [PM2][WARN] Current process list is not synchronized with saved list. App next-js differs. Type 'pm2 save' to synchronize.
 
 ```bash
