@@ -13,3 +13,4 @@
 - [File Transfer with sFTP and scp](file-transfer.md)
 - [SSH](ssh.md)
 - [User Managemet](user-management.md)
+- [JSON format, download and management](json-management.md)
