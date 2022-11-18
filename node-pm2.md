@@ -18,6 +18,10 @@ or LTS version
 ```bash
 $ nvm install --lts
 ```
+#### NVM Auto Switch
+detect **.nvmrc** file in the project folder and auto switch written nodejs version in the file 
+
+[append in ~/.zshrc file the script](https://github.com/nvm-sh/nvm#zsh)
 
 ## Install nodejs on Server via Snap
 
