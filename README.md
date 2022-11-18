@@ -14,3 +14,4 @@
 - [SSH](ssh.md)
 - [User Managemet](user-management.md)
 - [JSON format, download and management](json-management.md)
+- [File and Directory Management](file-directory-management.md)
