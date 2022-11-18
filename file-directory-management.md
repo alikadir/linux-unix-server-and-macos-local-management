@@ -3,13 +3,13 @@
 # File and Directory Management
 
 
-### rename file - directory
+### Rename file - directory
 use mv command for rename
 ```bash
 $ mv .old-file .new-file   
 ```
 
-### remove file - directory (recursivly)
+### Remove file - directory (recursivly)
 -r = recursivly
 
 -f = force
