@@ -1,5 +1,6 @@
 # Linux Server Management
 
+- [File and Directory Management](file-directory-management.md)
 - [Service Management - systemd](service-management.md)
 - [Cron jobs](cron-jobs.md)
 - [Package Management - apt - snap](package-management.md)
@@ -14,4 +15,3 @@
 - [SSH](ssh.md)
 - [User Managemet](user-management.md)
 - [JSON format, download and management](json-management.md)
-- [File and Directory Management](file-directory-management.md)
