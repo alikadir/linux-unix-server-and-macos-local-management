@@ -22,6 +22,8 @@ $ rm -r .node_modules
 
 -h = size mode humanfriendly
 
+-L 2 = deep limit 
+
 ```bash
 $ tree -s -h 
 ```
