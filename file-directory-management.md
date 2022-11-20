@@ -16,3 +16,12 @@ $ mv .old-file .new-file
 ```bash
 $ rm -r .node_modules  
 ```
+
+### Tree view :)
+-s = folder and file size (MB - KB)
+
+-h = size mode humanfriendly
+
+```bash
+$ tree -s -h 
+```
