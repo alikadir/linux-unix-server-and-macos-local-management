@@ -24,6 +24,8 @@ $ rm -r .node_modules
 
 -L 2 = deep limit 
 
+-C = colored
+
 ```bash
 $ tree -s -h 
 ```
