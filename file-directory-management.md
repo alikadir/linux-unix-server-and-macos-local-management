@@ -29,3 +29,11 @@ $ rm -r .node_modules
 ```bash
 $ tree -s -h 
 ```
+
+### Link (shortcut in windows)
+
+-s = symbolic or soft link [for more info](https://linuxize.com/post/how-to-create-symbolic-links-in-linux-using-the-ln-command/)
+
+```bash
+$ sudo ln -s /opt/homebrew/bin/idb /usr/local/bin/idb
+```
