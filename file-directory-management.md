@@ -37,3 +37,9 @@ $ tree -s -h
 ```bash
 $ sudo ln -s /opt/homebrew/bin/idb /usr/local/bin/idb
 ```
+
+### Track changes on a file
+-f = follow
+```bash
+$ tail -f ~/mylog.txt
+```
