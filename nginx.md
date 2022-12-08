@@ -108,6 +108,29 @@ for read large log file
 $ less /var/log/nginx/access.log
 ```
 
+#### Log Format
+
+log_format add in nginx.conf file's **http** section
+
+**escape=none** = log encode (") or (,) to (\x22) or (\x0A)
+ 
+```bash
+http {
+ 
+  log_format akb_formatter escape=none '$remote_addr - $remote_user [$time_local] '
+                           '"$request" $status $body_bytes_sent '
+                           '"$http_referer" "$http_user_agent" "$gzip_ratio" "$request_body"';
+
+  access_log /var/log/nginx/access.log akb_formatter;
+  error_log /var/log/nginx/error.log;
+
+  
+  ...
+
+}
+```
+
+
 ### Troubleshooting
 
 #### 413 – Request Entity Too Large
