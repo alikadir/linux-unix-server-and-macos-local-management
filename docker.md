@@ -53,6 +53,11 @@ $ docker update --restart always postgresql
 $ docker run -d -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=Abc12345 -p 27017:27017 -v $HOME/db/mongodb:/data/db mongo
 ```
 
+## Redis on docker
+```bash
+$ docker run -d -p 6379:6379 redis
+```
+
 ## PostgreSQL on docker
 
 ```bash
