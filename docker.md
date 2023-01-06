@@ -48,10 +48,15 @@ $ docker logs postgresql
 $ docker update --restart always postgresql 
 ```
 
+## MongoDB on docker
+```bash
+$ docker run -d -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=Abc12345 -p 27017:27017 -v $HOME/db/mongodb:/data/db mongo
+```
+
 ## PostgreSQL on docker
 
 ```bash
-$ docker run -d --name postgresql -e POSTGRES_PASSWORD=123-Ali-456 -e PGDATA=/var/lib/postgresql/data/pgdata -p 5432:5432 -v $HOME/db/postgresql:/var/lib/postgresql/data postgres
+$ docker run -d -e POSTGRES_USER=root -e POSTGRES_PASSWORD=Abc12345 -e PGDATA=/var/lib/postgresql/data/pgdata -p 5432:5432 -v $HOME/db/postgresql:/var/lib/postgresql/data postgres
 ```
 
 ## Elasticsearch on docker
