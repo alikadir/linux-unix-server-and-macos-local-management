@@ -64,6 +64,11 @@ $ docker run -d -p 6379:6379 redis
 $ docker run -d -e POSTGRES_USER=root -e POSTGRES_PASSWORD=Abc12345 -e PGDATA=/var/lib/postgresql/data/pgdata -p 5432:5432 -v $HOME/db/postgresql:/var/lib/postgresql/data postgres
 ```
 
+## MySQL on docker
+```bash
+$ docker run -d -e MYSQL_ROOT_PASSWORD=Abc12345 mysql
+```
+
 ## Elasticsearch on docker
 
 ```bash
