@@ -66,7 +66,7 @@ $ docker run -d -e POSTGRES_USER=root -e POSTGRES_PASSWORD=Abc12345 -e PGDATA=/v
 
 ## MySQL on docker
 ```bash
-$ docker run -d -e MYSQL_ROOT_PASSWORD=Abc12345 mysql
+$ docker run -d -e MYSQL_ROOT_PASSWORD=Abc12345 -v $HOME/db/mysql:/var/lib/mysql mysql
 ```
 
 ## Elasticsearch on docker
