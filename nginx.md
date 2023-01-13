@@ -130,6 +130,37 @@ http {
 }
 ```
 
+# on MacOS
+
+### Install Nginx
+```bash
+$ brew install nginx
+```
+
+### Start Nginx
+```bash
+$ sudo nginx
+```
+
+### Stop - Reload
+```bash
+$ sudo nginx -s stop
+```
+```bash
+$ sudo nginx -s reload
+```
+
+### Test Nginx configuration
+you can get configuration file path and check configuration 
+```bash
+$ sudo nginx -t
+
+nginx: the configuration file /opt/homebrew/etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /opt/homebrew/etc/nginx/nginx.conf test is successful
+```
+
+
+
 
 ### Troubleshooting
 
