@@ -65,7 +65,7 @@ $ launchctl print <service_name>
 
 ## Brew Services
 
-**brew services** using ```launchctl``` prefix ```gui/501/homebrew.mxcl.<service_name>```
+**brew services** wrap ```launchctl``` prefix ```gui/501/homebrew.mxcl.<service_name>```
 
 ### Install service
 ```bash
