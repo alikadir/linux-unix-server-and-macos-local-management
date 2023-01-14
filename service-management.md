@@ -92,3 +92,18 @@ $ brew services stop postgresql@14
 ```bash
 $ brew services info postgresql@14
 ```
+
+# Linux and MacOS common methods
+
+## Using port info
+```bash
+$ lsof -i:8081
+```
+
+## Using port info as root user
+```bash
+$ sudo lsof -i:8081
+```
+
+
+
