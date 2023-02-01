@@ -17,6 +17,16 @@ $ mv .old-file .new-file
 $ rm -r .node_modules  
 ```
 
+### Find and Replace in a file
+-i = (in-place) owerride the file 
+```bash
+$ sed -i 's/old-text/new-text/g' /Users/alikadir/Desktop/input.txt
+```
+```bash
+$ sed 's/old-text/new-text/g' /Users/alikadir/Desktop/input.txt > /Users/alikadir/Desktop/input_changed.txt
+```
+
+
 ### Tree view :)
 -s = folder and file size (MB - KB)
 
