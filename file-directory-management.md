@@ -17,7 +17,7 @@ $ mv .old-file .new-file
 $ rm -r .node_modules  
 ```
 
-### Find and Replace in a file
+### Find and Replace text in a file
 -i = (in-place) owerride the file 
 ```bash
 $ sed -i 's/old-text/new-text/g' /Users/alikadir/Desktop/input.txt
