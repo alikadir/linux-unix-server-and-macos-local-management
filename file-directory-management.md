@@ -19,11 +19,16 @@ $ rm -r .node_modules
 
 ### Find and Replace text in a file
 -i = (in-place) owerride the file 
+-e = extended regular expression
 ```bash
 $ sed -i 's/old-text/new-text/g' /Users/alikadir/Desktop/input.txt
 ```
 ```bash
 $ sed 's/old-text/new-text/g' /Users/alikadir/Desktop/input.txt > /Users/alikadir/Desktop/input_changed.txt
+```
+```bash
+$ myPet="your_value"
+$ sed -ie "s/bird/${myPet}/g" /Users/alikadir/Desktop/input.txt
 ```
 
 
