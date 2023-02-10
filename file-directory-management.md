@@ -45,7 +45,7 @@ $ sed -ie "s/bird/${myPet}/g" /Users/alikadir/Desktop/input.txt
 $ tree -s -h 
 ```
 
-### Link (shortcut in windows)
+### Link (like shortcut in windows)
 
 -s = symbolic or soft link [for more info](https://linuxize.com/post/how-to-create-symbolic-links-in-linux-using-the-ln-command/)
 
