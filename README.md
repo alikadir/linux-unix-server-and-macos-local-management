@@ -3,6 +3,7 @@
 - [File and Directory Management](file-directory-management.md)
 - [Process Managemet](process-management.md)
 - [User Managemet](user-management.md)
+- [User Permission](user-permission.md)
 - [Service Management - systemd](service-management.md)
 - [Cron jobs](cron-jobs.md)
 - [Package Management - apt - snap](package-management.md)
