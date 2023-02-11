@@ -24,9 +24,23 @@ d = directory
 
 f = file
 
+
+File(f) Or Directory(d) - Owner - Group - General
+
+```
+drwx------@  67 alikadir  staff      2144 Feb  8 18:13 Desktop
+^
+File(f) Or Directory(d)
+```
+```
+Owner - Group - General
+^
+rwx(3char) rwx(3char) rwx(3 char)
+```
+
 !!!! describe permission section !!!! ```-rw-r--r--```
 
-### Set/Change Permission
+### Change Permission
 -R = recursively file/folder and sub file/folder
 ```bash
 chmod -R 777 Desktop
