@@ -52,12 +52,23 @@ o = other
 ```bash
 $ chmod (u or g or o or empty) + or - (r,w,x) file/path
 ```
+#### Add execute permission to Desktop for Owner 
 ```bash
-$ chmod -R u+w Desktop
+$ chmod u+x Desktop
 ```
+#### Remove execute permission to Desktop for Group 
 ```bash
-$ chmod -R u 777 Desktop
+$ chmod g-x Desktop
 ```
+#### Add execute permission to Desktop for Owner and Group and Other 
+```bash
+$ chmod +x Desktop
+```
+#### Add execute permission to Desktop and All Subfolder and files for Owner and Group and Other 
+```bash
+$ chmod -R +x Desktop
+```
+
 
 ```bash
 chmod -R -w Desktop
