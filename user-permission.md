@@ -59,10 +59,10 @@ o = other
 $ chmod (u or g or o or empty) + or - (r,w,x) file/path
 ```
 ```bash
-chmod -R 777 Desktop
+chmod -R u 777 Desktop
 ```
 ```bash
-chmod -R +w Desktop
+chmod -R u+w Desktop
 ```
 ```bash
 chmod -R -w Desktop
