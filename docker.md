@@ -77,13 +77,13 @@ $ docker run -d -e RABBITMQ_DEFAULT_USER=root -e RABBITMQ_DEFAULT_PASS=Abc12345 
 
 
 ## Elasticsearch on docker
-
+http://localhost:9200
 ```bash
 $ docker run -d --name elasticsearch --network elastic -p 9200:9200 -p 9300:9300 -e "xpack.security.enabled=false" -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:8.4.1
 ```
 
 ## Kibana on docker
-
+http://localhost:5601
 ```bash
 $ docker run -d --network elastic -e ELASTICSEARCH_URL=http://elasticsearch:9200 -p 5601:5601 kibana:8.4.2
 ```
