@@ -65,9 +65,16 @@ $ docker run -d -e POSTGRES_USER=root -e POSTGRES_PASSWORD=Abc12345 -e PGDATA=/v
 ```
 
 ## MySQL on docker
+root is default user
 ```bash
 $ docker run -d -e MYSQL_ROOT_PASSWORD=Abc12345 -v $HOME/db/mysql:/var/lib/mysql -p 3306:3306 mysql
 ```
+## RabbitMQ on docker
+http://localhost:8080
+```bash
+$ docker run -d -e RABBITMQ_DEFAULT_USER=root -e RABBITMQ_DEFAULT_PASS=Abc12345 -p 8080:15672 rabbitmq:3-management
+```
+
 
 ## Elasticsearch on docker
 
