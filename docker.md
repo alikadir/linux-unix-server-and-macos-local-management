@@ -58,6 +58,26 @@ $ docker run -d -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD
 $ docker run -d -p 6379:6379 redis
 ```
 
+## Redis Sentinel on docker
+```bash
+$ docker run -d -p 6379:6379 redis
+```
+```bash
+$ docker run -p 26379:26379 -e REDIS_MASTER_HOST=127.0.0.1 bitnami/redis-sentinel
+```
+```js
+await ioRedisStore({
+  sentinels: [
+    {
+      host: 'localhost'
+      port: 26379
+    },
+  ],
+  name: 'mymaster',
+  ttl: configService.get(REDIS_TTL),
+}),
+```
+
 ## PostgreSQL on docker
 
 ```bash
