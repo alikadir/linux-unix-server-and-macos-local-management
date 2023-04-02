@@ -83,7 +83,6 @@ $ chmod -R +x Desktop
 $ chmod a+rwx,u-wx,g-rx,o-rw Desktop
 ```
 
-
 ```bash
 chmod -R -w Desktop
 ```
