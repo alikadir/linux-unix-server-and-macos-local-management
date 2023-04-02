@@ -74,7 +74,6 @@ $ chmod -R a+x Desktop
 or 
 $ chmod -R +x Desktop
 ```
-
 #### add read,write,execute permission to All of them (Owner,Group,Other) 
 #### AND remove write,execute to Owner 
 #### AND remove read,execute to Group 
