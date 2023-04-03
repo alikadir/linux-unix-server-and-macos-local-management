@@ -29,6 +29,13 @@ detect **.nvmrc** file in the project folder and auto switch written nodejs vers
 $ sudo snap install node --classic
 ```
 
+## Install nodejs (LTS) on Server (Ubuntu) via Apt
+```bash
+$ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+```
+
+
 [for more package manager (Apt or Snap) info](package-management.md)
 
 ### Install PM2 via NPM
