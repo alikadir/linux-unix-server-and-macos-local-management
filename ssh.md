@@ -59,3 +59,12 @@ hardware list
 ```bash
 $ lshw
 ```
+
+### connect ssh without password (with ssh key)
+-i = identity_file
+
+```bash
+$ ssh-copy-id -i ~/.ssh/id_rsa.pub root@10.43.100.152
+```
+
+
