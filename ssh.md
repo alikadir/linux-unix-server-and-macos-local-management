@@ -60,7 +60,7 @@ hardware list
 $ lshw
 ```
 
-### connect ssh without password (with ssh key)
+### Connect ssh without password (with ssh key)
 -i = identity_file
 
 ```bash
