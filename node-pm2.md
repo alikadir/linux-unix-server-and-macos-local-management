@@ -55,6 +55,11 @@ or a NextJS app
 $ pm2 start npm --name ‘next-js’ -- start
 ```
 
+or a NestJS app
+```bash
+$ pm2 start npm --name ‘nest-js’ -- run start:prod
+```
+
 ### Start, stop, restart and remove a nodejs app on PM2
 
 ```bash
