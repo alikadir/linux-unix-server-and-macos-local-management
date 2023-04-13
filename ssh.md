@@ -61,6 +61,11 @@ $ lshw
 ```
 
 ### Connect ssh without password (with ssh key)
+```bash
+$ ssh-copy-id root@10.43.100.152
+```
+or using custom ssh public key 
+
 -i = identity_file
 
 ```bash
