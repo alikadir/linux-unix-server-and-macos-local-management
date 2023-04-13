@@ -91,6 +91,7 @@ server {
 for [SSL certificate configuration](ssl-certificate-management.md) on Nginx
 
 ### Link config file to sites-enabled directory
+because nginx global config (```/etc/nginx/nginx.conf```) looks at site-enabled directory
 
 -s = symbolic or soft link [for more info](https://linuxize.com/post/how-to-create-symbolic-links-in-linux-using-the-ln-command/)
 
