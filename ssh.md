@@ -72,7 +72,7 @@ or using custom ssh public key
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub root@10.43.100.152
 ```
 
-### Connect ssh with password automaticly
+### Connect ssh with password automatically (apt-get install sshpass)
 ```bash
 $ sshpass -p Abc12345! ssh root@10.43.100.152 "pm2 list"
 ```
