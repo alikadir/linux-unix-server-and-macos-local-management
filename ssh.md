@@ -71,6 +71,11 @@ or using custom ssh public key
 ```bash
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub root@10.43.100.152
 ```
+***ssh-copy-id*** command copies the ```id_rsa.pub``` key file from the local machine and pastes it into the ```authorized_keys``` file on the remote server. also, we can do this as manually if we want
+
+```bash
+$ cat ~/.ssh/id_rsa.pub | ssh root@10.43.100.152 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+```
 
 ### Connect ssh with password automatically (apt-get install sshpass)
 ```bash
