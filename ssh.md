@@ -52,14 +52,6 @@ the ip for connect to this server
 $ ip a
 ```
 
-### Get server info (OS-CPU-RAM-DISK)
-
-hardware list
-
-```bash
-$ lshw
-```
-
 ### Connect ssh without password (with ssh key)
 ```bash
 $ ssh-copy-id root@10.43.100.152
