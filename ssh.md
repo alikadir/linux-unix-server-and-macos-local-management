@@ -70,6 +70,11 @@ or using custom ssh public key
 
 ```bash
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub root@10.43.100.152
+
+### Connect ssh with password automaticly
+```bash
+$ sshpass -p Abc12345! ssh root@10.43.100.152 "pm2 list"
+```
 ```
 
 
