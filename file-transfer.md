@@ -10,6 +10,8 @@
 
 ```bash
 $ scp -rp /Users/alikadir/Desktop/PROJECTS/my-website/* root@111.111.111.111:/var/www/alikadir.com
+---
+$ scp -rp /Users/alikadir/Desktop/PROJECTS/email-consumer/ root@10.43.100.152:/var/www/email-consumer/
 ```
 
 
