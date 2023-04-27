@@ -74,21 +74,21 @@ or write following config for **proxy website (dotnet or nodejs)** in the config
 
 ```
 server {
-       server_name alikadir.com www.alikadir.com;
-       location /
-       {
+    server_name alikadir.com www.alikadir.com;
+    location /
+    {
        proxy_pass http://localhost:3000;
        proxy_http_version 1.1;
        proxy_set_header Upgrade $http_upgrade;
        proxy_set_header Connection keep-alive;
        proxy_set_header Host $host;
        proxy_cache_bypass $http_upgrade;
-       }
+    }
 
 }
 server {
-      server_name alikadir.com www.alikadir.com;
-      listen 80;
+    server_name alikadir.com www.alikadir.com;
+    listen 80;
 }
 ```
 
