@@ -53,16 +53,20 @@ then write following config for **plain html website** in the config file
 
 ```
 server {
-        listen 80;
+    listen 80;
 
-        root /var/www/alikadir.com;
-        index index.html index.htm index.nginx-debian.html;
+    root /var/www/alikadir.com;
+    index index.html index.htm index.nginx-debian.html;
 
-        server_name alikadir.com www.alikadir.com;
+    server_name alikadir.com www.alikadir.com;
 
-        location / {
-                try_files $uri $uri/ =404;
-        }
+    #location / { 
+        #try_files $uri $uri/ =404;
+    #}
+    
+    location / { #for SPA websites like React
+        try_files $uri $uri/ /index.html;
+    }
 }
 ```
 
