@@ -61,7 +61,7 @@ server {
     server_name alikadir.com www.alikadir.com;
 
     #location / { 
-        #try_files $uri $uri/ =404;
+    #   try_files $uri $uri/ =404;
     #}
     
     location / { #for SPA websites like React
@@ -74,6 +74,7 @@ or write following config for **proxy website (dotnet or nodejs)** in the config
 
 ```
 server {
+    listen 80;
     server_name alikadir.com www.alikadir.com;
     location /
     {
@@ -85,10 +86,6 @@ server {
        proxy_cache_bypass $http_upgrade;
     }
 
-}
-server {
-    server_name alikadir.com www.alikadir.com;
-    listen 80;
 }
 ```
 
