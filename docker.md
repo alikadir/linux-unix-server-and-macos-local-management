@@ -10,7 +10,7 @@
 ```bash
 $ brew install --cask multipass
 ```
-### Create new instance
+### Create new instances
 ```bash
 $ multipass launch 
 
@@ -42,6 +42,23 @@ Load:           0.97 0.30 0.10
 Disk usage:     1.1G out of 4.7G
 Memory usage:   85.1M out of 985.4M
 ```
+
+### Connect to a running instance
+```bash
+$ multipass shell dancing-chipmunk
+
+Welcome to Ubuntu 18.04.1 LTS (GNU/Linux 4.15.0-42-generic x86_64)
+
+...
+```
+
+### Stop and Delete the instance
+```bash
+$ multipass stop dancing-chipmunk
+$ multipass delete dancing-chipmunk
+```
+
+------
 
 ## Docker
 for install docker on Ubuntu visit [link](https://docs.docker.com/engine/install/ubuntu/) 
