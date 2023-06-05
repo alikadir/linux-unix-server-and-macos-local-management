@@ -1,7 +1,49 @@
 [<< Back](README.md)
 
-# Docker
+# Docker and Multipass
 
+## Multipass
+
+[Multipass](https://multipass.run) is a quick and easy way to launch virtual machine instances running Ubuntu on MacOS or Windows or Linux
+
+### Install Multipass
+```bash
+$ brew install --cask multipass
+```
+### Create new instance
+```bash
+$ multipass launch 
+
+Launching dancing-chipmunk...
+Downloading Ubuntu 18.04 LTS..........
+Launched: dancing chipmunk
+```
+### Show running instance
+```bash
+$ multipass list
+
+Name                    State             IPv4             Release
+dancing-chipmunk        RUNNING           10.125.174.247   Ubuntu 18.04 LTS
+live-naiad              RUNNING           10.125.174.243   Ubuntu 18.04 LTS
+snapcraft-asciinema     STOPPED           --               Ubuntu Snapcraft builder for Core 18
+```
+
+### Show detail the instance
+```bash
+$ multipass info dancing-chipmunk
+
+Name:           dancing-chipmunk
+State:          RUNNING
+IPv4:           10.125.174.247
+Release:        Ubuntu 18.04.1 LTS
+Image hash:     19e9853d8267 (Ubuntu 18.04 LTS)
+CPU(s):         1
+Load:           0.97 0.30 0.10
+Disk usage:     1.1G out of 4.7G
+Memory usage:   85.1M out of 985.4M
+```
+
+## Docker
 for install docker on Ubuntu visit [link](https://docs.docker.com/engine/install/ubuntu/) 
 
 ### Get all containers
