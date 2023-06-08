@@ -74,4 +74,10 @@ $ cat ~/.ssh/id_rsa.pub | ssh root@10.43.100.152 "mkdir -p ~/.ssh && cat >> ~/.s
 $ sshpass -p Abc12345! ssh root@10.43.100.152 "pm2 list"
 ```
 
+for the prevent the known-host insertion of ssh connection
+
+```bash 
+$ sshpass -p Abc12345! ssh root@10.43.100.152 "pm2 list" -o StrictHostKeyChecking=no
+```
+
 
