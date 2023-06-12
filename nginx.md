@@ -132,6 +132,32 @@ http {
 }
 ```
 
+### Show Nginx Statistic
+```bash
+
+server {
+    listen 80;
+    server_name alikadir.com www.alikadir.com;
+    location /
+    {
+       proxy_pass http://localhost:3000;
+       proxy_http_version 1.1;
+       proxy_set_header Upgrade $http_upgrade;
+       proxy_set_header Connection keep-alive;
+       proxy_set_header Host $host;
+       proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /basic_status {
+        stub_status;
+        allow 0.0.0.0;
+        #allow 10.43.100.153;
+    }
+    
+}
+
+```
+
 # on MacOS
 
 ### Install Nginx
