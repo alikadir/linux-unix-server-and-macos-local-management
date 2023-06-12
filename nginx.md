@@ -132,7 +132,7 @@ http {
 }
 ```
 
-### Show Nginx Statistic
+### Show Nginx statistic
 ```bash
 
 server {
