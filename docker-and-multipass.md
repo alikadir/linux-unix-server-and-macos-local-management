@@ -58,6 +58,19 @@ $ multipass stop dancing-chipmunk
 $ multipass delete dancing-chipmunk
 ```
 
+### Mount folder to instance
+
+when launch an instance
+```bash
+$ multipass launch --mount /some/local/path:/some/instance/path
+```
+or 
+after launch the instance
+```bash
+$ multipass mount /Users/alikadir/Desktop/PROJECTS/account-api dancing-chipmunk:/var/my-project
+```
+
+
 ------
 
 ## Docker
