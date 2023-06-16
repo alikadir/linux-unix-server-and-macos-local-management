@@ -69,7 +69,10 @@ after launch the instance
 ```bash
 $ multipass mount /Users/alikadir/Desktop/PROJECTS/account-api dancing-chipmunk:/var/my-project
 ```
-
+### UnMount folder
+```bash
+$ multipass umount dancing-chipmunk:/var/my-project
+```
 
 ------
 
