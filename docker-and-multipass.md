@@ -69,6 +69,11 @@ after launch the instance
 ```bash
 $ multipass mount /Users/alikadir/Desktop/PROJECTS/account-api dancing-chipmunk:/var/my-project
 ```
+
+!!! on MacOS, you can access full disk read to multipassd process at Privacy&Security. 
+```AppleIcon > System Settings > Privacy & Security > Full Disk Access > Allow multipassd```
+
+
 ### UnMount folder
 ```bash
 $ multipass umount dancing-chipmunk:/var/my-project
