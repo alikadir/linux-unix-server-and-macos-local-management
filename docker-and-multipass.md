@@ -28,7 +28,7 @@ live-naiad              RUNNING           10.125.174.243   Ubuntu 18.04 LTS
 snapcraft-asciinema     STOPPED           --               Ubuntu Snapcraft builder for Core 18
 ```
 
-### Show detail the instance
+### Show detail of the instance
 ```bash
 $ multipass info dancing-chipmunk
 
@@ -58,7 +58,7 @@ $ multipass stop dancing-chipmunk
 $ multipass delete dancing-chipmunk
 ```
 
-### Mount folder to instance
+### Mount folder to the instance
 
 when launch an instance
 ```bash
@@ -78,6 +78,14 @@ $ multipass mount /Users/alikadir/Desktop/PROJECTS/account-api dancing-chipmunk:
 ```bash
 $ multipass umount dancing-chipmunk:/var/my-project
 ```
+
+### Show IP of the instance 
+```bash
+$ apt-get update
+$ apt-get install net-tools
+$ ifconfig
+```
+
 
 ------
 
@@ -102,7 +110,7 @@ $ docker remove postgresql
 $ docker rename old_name new_name
 ```
 
-### Start, stop and restart container
+### Start, stop, and restart the container
 
 ```bash
 $ docker start postgresql
