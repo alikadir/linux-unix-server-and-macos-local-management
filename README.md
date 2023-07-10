@@ -18,4 +18,4 @@
 - [SSH](ssh.md)
 - [JSON format, download and management](json-management.md)
 - [Environment Variables](environment-variables.md)
-- [Environment Variables](git.md)
+- [Git](git.md)
