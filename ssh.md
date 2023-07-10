@@ -80,4 +80,21 @@ for the prevent the known-host insertion of ssh connection
 $ sshpass -p Abc12345! ssh root@10.43.100.152 "pm2 list" -o StrictHostKeyChecking=no
 ```
 
+## SSH Port Forwarding (tunneling)
+
+### Local to remote 
+-L = local
+
+-R = remote
+
+-f = background working (for remove connection ```lsof -i:8080 and kill <id>```)
+
+-N = do not execute remote command
+
+```bash
+$ ssh root@75.43.71.102 -L 8080:75.43.71.102:3000
+$ curl localhost:8080
+```
+
+
 
