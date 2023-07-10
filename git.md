@@ -6,11 +6,22 @@
 ### Tags  
 Tag is very much like a branch that doesn’t change and also it’s just a pointer to a specific commit.
 
-#### Add
-aaa
+#### Show tag
+```bash
+$ git tag
+```
 
-#### Push
-bbb
+#### Add tag
+```bash
+$ git tag 1.0.0 -m 'sample tag message'
+```
 
-#### Delete
-ccc
+#### Push tag
+```bash
+$ git push origin --tags
+```
+
+#### Delete tag
+```bash
+$ git push origin --delete 1.0.0
+```
