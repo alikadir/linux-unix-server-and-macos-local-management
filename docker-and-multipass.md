@@ -136,6 +136,38 @@ $ docker logs postgresql
 $ docker update --restart always postgresql 
 ```
 
+## Docker image
+
+### Docker image build with docker file 
+
+```bash
+$ docker build --tag devops-sample-api-project .
+```
+
+### Show docker images
+
+```bash
+$ docker images --all
+```
+
+### Add tag to docker image
+
+```bash
+$ docker tag devops-sample-api-project alikadir/devops-sample-api-project:v1.0.0
+```
+
+## Push docker image to docker hub
+
+```bash
+$ docker login --username USER --password PASSWORD
+
+$ docker push alikadir/devops-sample-api-project --all-tags
+```
+
+
+---
+
+
 ## MongoDB on docker
 ```bash
 $ docker run -d -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=Abc12345 -p 27017:27017 -v $HOME/db/mongodb:/data/db mongo
