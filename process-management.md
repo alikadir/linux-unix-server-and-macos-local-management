@@ -3,22 +3,27 @@
 # Process Management
 
 
-## Using port info
+### Using port info
 ```bash
 $ lsof -i:8081
 ```
 
-## Using port info as root user
+### Using port info as root user
 ```bash
 $ sudo lsof -i:8081
 ```
 
-## Get process info
+### Get process info
 ```bash
 $ ps -ef <PID>
 ```
 
-## Kill process
+### Get process working path
+```bash
+$ lsof -p <PID> | grep cwd
+```
+
+### Kill process
 ```bash
 $ kill -9 <PID>
 ```
