@@ -35,3 +35,9 @@ $ git tag --delete 1.0.0
 ```bash
 $ git push origin --delete 1.0.0
 ```
+
+### Another User Problem
+```bash
+$ git config --global user.email "alikadirbagcioglu@gmail.com"
+$ git config --global user.name "Ali Kadir Bagcioglu"
+```
