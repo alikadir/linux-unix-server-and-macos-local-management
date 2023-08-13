@@ -31,6 +31,15 @@ $ myPet="your_value"
 $ sed -ie "s/bird/${myPet}/g" /Users/alikadir/Desktop/input.txt
 ```
 
+### Convert text to base64
+```bash
+$ echo -n alikadir | base64
+# YWxpa2FkaXI=
+
+$ echo -n 'YWxpa2FkaXI=' | base64 --decode
+# alikadir%
+```
+
 
 ### Tree view :)
 -s = folder and file size (MB - KB)
