@@ -175,4 +175,19 @@ No renewals were attempted.
 
 I may setup a cron job with "certbot renew" command and check periodically.
 
+## RSA certificate create
+```bash
+$ openssl genrsa -out alikadir.key 2048
+$ cat alikadir.key
 
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAxGhxwU8w4SUs7K7DVcDL4u3HG/8V21oTbI6xeYi2iddwx4s5
+...
+xMQisvRV+HMVCCn5XwZN7QMZXsVzvBDJXnoRMfQEMt7IbhHTe3bEvA==
+-----END RSA PRIVATE KEY-----
+```
+
+### CSR Certificate Signing Request create
+```bash
+$ openssl reg -new -key alikkadir.key -out alikadir.csr -subj "/CN=ali@kadir.com/O=DevTeam"
+```
