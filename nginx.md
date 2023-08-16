@@ -188,7 +188,12 @@ nginx: configuration file /opt/homebrew/etc/nginx/nginx.conf test is successful
 ```
 
 ### LoadBalance
+Layer 7 (L7) = HTTP/HTTPS, HTTP/2, gRPC, WebSocket
+
+Layer 4 (L4) = TCP/UDP
+
 [detail in my personal blog](https://alikadir.wordpress.com/2021/04/11/nginx-load-balancing/)
+
 ```bash
 upstream myproject {   
     server 127.0.0.1:8081;
