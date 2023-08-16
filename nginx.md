@@ -187,6 +187,45 @@ nginx: the configuration file /opt/homebrew/etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /opt/homebrew/etc/nginx/nginx.conf test is successful
 ```
 
+### LoadBalance
+[detail in my personal blog](https://alikadir.wordpress.com/2021/04/11/nginx-load-balancing/)
+```bash
+upstream myproject {   
+    server 127.0.0.1:8081;
+    server 127.0.0.1:8082;
+    server 127.0.0.1:8083;
+    server 127.0.0.1:8084;
+    server 127.0.0.1:8085;
+    server 10.114.0.5:8086;
+    server 10.114.0.5:8087;
+}
+
+server {
+        listen 80;
+        listen [::]:80;
+        server_name test1.gramofon.net;
+        return 301 https://$host$request_uri;
+}
+
+
+server {
+       listen 443 ssl;
+
+       ssl_certificate /etc/ssl/test1/certificate.crt;
+       ssl_certificate_key /etc/ssl/test1/private.key;
+
+       server_name test1.gramofon.net;
+
+       root /var/www/html/test1;
+       index index.html;
+
+       location / {
+              proxy_set_header   X-Forwarded-For $remote_addr;
+              proxy_set_header   Host $http_host;
+              proxy_pass         http://myproject;
+    }
+}  
+```
 
 
 
