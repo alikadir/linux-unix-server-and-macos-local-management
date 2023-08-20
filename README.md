@@ -1,6 +1,7 @@
 # Linux Server Management
 
 - [File and Directory Management](file-directory-management.md)
+- [Vi / Vim](vim.md)
 - [Process Managemet](process-management.md)
 - [User Managemet](user-management.md)
 - [User Permission](user-permission.md)
