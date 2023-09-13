@@ -68,6 +68,18 @@ $ id alikadir
 $ whoami
 ```
 
+### Switch another user (sudo su) 
+```bash
+root@mylinux:$ sudo su alikadir
+alikadir@mylinux:$ #some operations...
+alikadir@mylinux:$ exit
+root@mylinux:$ 
+```
+to switch to root user 
+```bash
+$ sudo su 
+```
+
 ### Add user with user directory in home directory
 ```bash
 $ sudo useradd alikadir --create-home
