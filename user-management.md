@@ -69,6 +69,7 @@ $ whoami
 ```
 
 ### Switch another user (sudo su) 
+su = switch user 
 ```bash
 root@mylinux:$ sudo su alikadir
 alikadir@mylinux:$ #some operations...
@@ -77,7 +78,9 @@ root@mylinux:$
 ```
 to switch to root user 
 ```bash
-$ sudo su 
+$ alikadir@mylinux:$ sudo su
+$ root@mylinux:$ exit
+$ alikadir@mylinux:$ 
 ```
 
 ### Add user with user directory in home directory
