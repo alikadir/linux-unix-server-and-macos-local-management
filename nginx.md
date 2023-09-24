@@ -100,6 +100,12 @@ because nginx global config (```/etc/nginx/nginx.conf```) looks at sites-enabled
 $ sudo ln -s /etc/nginx/sites-available/alikadir.com /etc/nginx/sites-enabled/
 ```
 
+### Reload Nginx
+to activate the changes
+```bash
+$ sudo nginx -s reload
+```
+
 ### Logs
 ```/var/log/nginx/access.log``` = Every request to your web server is recorded in this log file unless Nginx is configured to do otherwise.
 ```/var/log/nginx/error.log``` = Any Nginx errors will be recorded in this log.
