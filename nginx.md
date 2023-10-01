@@ -110,11 +110,18 @@ $ sudo nginx -s reload
 ```/var/log/nginx/access.log``` = Every request to your web server is recorded in this log file unless Nginx is configured to do otherwise.
 ```/var/log/nginx/error.log``` = Any Nginx errors will be recorded in this log.
 
-for read large log file
+to read large log file
 
 ```bash
 $ less /var/log/nginx/access.log
 ```
+
+to read large log file with formatting ```-R``` and got to end of the file ```+G``` 
+
+```bash
+$ less -R +G /var/log/nginx/access.log
+```
+
 
 #### Log Format
 
