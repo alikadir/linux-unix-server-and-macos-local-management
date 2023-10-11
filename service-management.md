@@ -2,6 +2,52 @@
 
 # Service Management on Linux
 
+## Create a service
+
+create a service file on ```/etc/systemd/system/```
+```bash
+vim /etc/systemd/system/nodejs.alikadir.com.service
+```
+edit for nodejs app
+```bash
+[Unit]
+Description=Pi WiFi Hotspot Service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi/Node/PiWiFi
+ExecStart=/usr/bin/nodejs /home/pi/Node/PiWiFi/app.js
+Restart=on-failure
+User=root
+Environment=PORT=3000
+
+[Install]
+WantedBy=multi-user.target
+```
+or edit for dotnet app
+```bash
+[Unit]
+Description= Ali Kadir Personal Web Site
+
+[Service]
+WorkingDirectory=/var/www/alikadir.com/
+ExecStart=/usr/bin/dotnet /var/www/alikadir.com/alikadir-website.dll
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=dotnet-alikadir-website
+User=root
+Environment=ASPNETCORE_URLS="http://localhost:5000"
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=CONNECTIONSTRING="Server=localhost;Port=5432;Database=alikadir-website;User Id=postgres;Password=12345"
+
+[Install]
+WantedBy=multi-user.target
+```
+[more detail creating service](https://www.tecmint.com/create-systemd-service-linux/) 
+
+
 ## SystemCtl
 **systemctl** is using for service management.
 
@@ -12,7 +58,7 @@ $ systemctl status | grep nginx
 
 ### Start, stop and restart service
 ```bash
-$ systemctl start kastrel.alikadir.com.service
+$ systemctl start nodejs.alikadir.com.service
 ```
 ```bash
 $ systemctl stop kastrel.alikadir.com.service
