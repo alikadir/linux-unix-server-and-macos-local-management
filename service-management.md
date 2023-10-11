@@ -3,8 +3,7 @@
 # Service Management on Linux
 
 ## Create a service
-
-create a service file on ```/etc/systemd/system/```
+create a service file on ```/etc/systemd/system/``` for our web application working as service (so it can restart when reboot or failure)
 ```bash
 vim /etc/systemd/system/nodejs.alikadir.com.service
 ```
