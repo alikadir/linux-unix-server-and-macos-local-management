@@ -43,7 +43,7 @@ $ cd <project_path>/bin/Release/net6.0/publish/
 [transfer all files](file-transfer.md) in publish directory to the server (/var/www/alikadir.com/)
 
 ### Setup kestrel service configuration on Server
-
+[go to creating service file page for more detail](service-management.md)
 ```bash
 $ touch /etc/systemd/system/kestrel.alikadir.com.service
 ```
