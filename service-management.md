@@ -44,7 +44,7 @@ Environment=CONNECTIONSTRING="Server=localhost;Port=5432;Database=alikadir-websi
 [Install]
 WantedBy=multi-user.target
 ```
-[more detail creating service](https://www.tecmint.com/create-systemd-service-linux/) 
+[more detail creating a linux service](https://www.tecmint.com/create-systemd-service-linux/) 
 
 
 ## SystemCtl
