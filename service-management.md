@@ -77,7 +77,7 @@ general service path ```/etc/systemd/system/kastrel.alikadir.com.service```
 -u = unit
 
 ```bash
-$ journalctl -fu kastrel.alikadir.com.service (-f follow -u unit) servis loglarini alabilmek icin 
+$ journalctl -fu kastrel.alikadir.com.service
 ```
 
 # Service Management on MacOS
