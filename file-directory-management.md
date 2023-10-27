@@ -2,14 +2,37 @@
 
 # File and Directory Management
 
+### Find file or directory
+use the find command for find
+```bash
+$ find .
+```
+specify file type and name
+```
+$ find MyAwesomeProject -type f -name "*.json"
+```
+exclude some folders
+```bash
+$ find MyAwesomeProject -type f -name "*.json" -not -path "*/node_modules/*"
+```
+execute a command for the found file/folder path (remove file)
 
-### Rename file - directory
-use mv command for rename
+{} = currently finding file/folder path
+
+; = end of exec command line
+
+\ = excape char for semicolon (;)
+```bash
+$ find PROJECTS -type f -name "package-lock.json" -not -path "*/node_modules/*" -exec rm {} \; 
+```
+
+### Rename file or directory
+use the mv command for rename
 ```bash
 $ mv .old-file .new-file   
 ```
 
-### Remove file - directory (recursivly)
+### Remove file or directory (recursivly)
 -r = recursivly
 
 -f = force
