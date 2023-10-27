@@ -1,5 +1,20 @@
 # Linux Server Management
 
+Unix and Linux are both operating systems, but there are some key differences between them.
+
+| Feature            | Unix                             | Linux                                                 |
+|--------------------|----------------------------------|-------------------------------------------------------|
+| License            | Proprietary                      | Open source                                           |
+| Cost               | Paid                             | Free                                                  |
+| Distribution       | Distributed by various companies | Distributed by many different communities             |
+| Compatibility      | POSIX compliant                  | Many distributions are POSIX compliant                |
+| File system        | Various file systems             | Various file systems, but most distributions use ext4 |
+| Commercial support | Yes                              | Yes, but limited                                      |
+| Community support  | Smaller community                | Large and active community                            |
+
+Remember that while there are these differences, there are also many similarities due to Linux's Unix-like nature. Many skills and knowledge transfer between the two
+
+## Index
 - [File and Directory Management](file-directory-management.md)
 - [Vi / Vim](vim.md)
 - [Process Managemet](process-management.md)
