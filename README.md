@@ -1,4 +1,4 @@
-# Linux Server Management
+# Linux / Unix (MacOS) and Server Management
 
 Unix and Linux are both operating systems, but there are some key differences between them.
 
