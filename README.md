@@ -16,6 +16,7 @@ Remember that while there are these differences, there are also many similaritie
 
 ## Index
 - [File and Directory Management](file-directory-management.md)
+- [Redirection method in Linux and Unix](redirection.md)
 - [Vi / Vim](vim.md)
 - [Process Managemet](process-management.md)
 - [User Managemet](user-management.md)
