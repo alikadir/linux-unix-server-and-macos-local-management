@@ -27,7 +27,14 @@ $ find PROJECTS -type f -name "package-lock.json" -not -path "*/node_modules/*" 
 ```
 
 ### Search any text in file or files in folder
-use grep command for search in file or recursively files in folder
+use grep command for search in file or recursively files in folder.
+
+redirection method
+```bash
+$ grep "console.log" < app.js
+```
+
+pipe method
 ```bash
 $ man curl | grep "post"
 ```
