@@ -26,6 +26,19 @@ execute a command for the found file/folder path (remove file)
 $ find PROJECTS -type f -name "package-lock.json" -not -path "*/node_modules/*" -exec rm {} \; 
 ```
 
+### View file content
+```bash
+$ cat a.txt
+```
+```bash
+$ cat a.txt b.txt c.txt > sum.txt
+```
+-n = Line Number 
+```bash
+$ cat a.txt -n
+```
+
+
 ### Rename file or directory
 use the mv command for rename
 ```bash
