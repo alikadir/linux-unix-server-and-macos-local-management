@@ -26,6 +26,24 @@ execute a command for the found file/folder path (remove file)
 $ find PROJECTS -type f -name "package-lock.json" -not -path "*/node_modules/*" -exec rm {} \; 
 ```
 
+### Search any text in file or files in folder
+use grep command for search in file or recursively files in folder
+```bash
+$ man curl | grep "post"
+```
+-r = recursively
+
+-n = line number
+
+-v = inverse matches (aramada eslesmeten kayitlar getirir)
+
+-r = recursively search in folder
+
+. = current dir
+```bash
+$ grep console.log -r . --exclude-dir=node_modules
+```
+
 ### View file content
 ```bash
 $ cat a.txt
