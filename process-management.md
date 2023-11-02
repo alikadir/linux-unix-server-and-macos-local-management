@@ -13,7 +13,15 @@ $ lsof -i:8081
 $ sudo lsof -i:8081
 ```
 
+### Get all process list
+```bash
+$ ps auxwe
+```
+
 ### Get process info
+```bash
+$ ps <PID>
+```
 ```bash
 $ ps -ef <PID>
 ```
