@@ -44,6 +44,9 @@ Environment=CONNECTIONSTRING="Server=localhost;Port=5432;Database=alikadir-websi
 [Install]
 WantedBy=multi-user.target
 ```
+
+generally put ```nodejs-alikadir.com.service``` into ```/lib/systemd/system/``` and then [symboliclink](https://github.com/alikadir/linux-unix-server-and-macos-local-management/blob/main/file-directory-management.md#link-like-shortcut-in-windows) the file into ```/etc/systemd/system/``` like the nginx configs
+
 [more detail creating a linux service](https://www.tecmint.com/create-systemd-service-linux/) 
 
 
