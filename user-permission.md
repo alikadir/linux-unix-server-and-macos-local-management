@@ -82,3 +82,28 @@ $ chmod -R +x Desktop
 ```bash
 $ chmod a+rwx,u-wx,g-rx,o-rw Desktop
 ```
+
+### Set permission with number
+
+| Value | Permission  | Description                            |
+|-------|-------------|----------------------------------------|
+| 0     | - - -       | No access                              |
+| 1     | - - x       | Execute only                           |
+| 2     | - w -       | Write access only                      |
+| 3     | - w x       | Write and execute                      |
+| 4     | r - -       | Read only                              |
+| 5     | r - x       | Read and execute                       |
+| 6     | r w -       | Read and write                         |
+| 7     | r w x       | Read, write, and execute (full access) |
+
+Examples:
+
+777 - all can read/write/execute (full access).
+
+755 - owner can read/write/execute, group/others can read/execute.
+
+644 - owner can read/write, group/others can read only.
+
+```bash
+$ chmod 644 /etc/systemd/system/nodejs-alikadircom.service
+```
