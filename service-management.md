@@ -45,7 +45,7 @@ Environment=CONNECTIONSTRING="Server=localhost;Port=5432;Database=alikadir-websi
 WantedBy=multi-user.target
 ```
 
-you can put ```nodejs-alikadir.com.service``` into ```/lib/systemd/system/``` and then [symboliclink](https://github.com/alikadir/linux-unix-server-and-macos-local-management/blob/main/file-directory-management.md#link-like-shortcut-in-windows) the file into ```/etc/systemd/system/``` like the nginx configs
+if you want you can put ```nodejs-alikadir.com.service``` into ```/lib/systemd/system/``` and then [symboliclink](https://github.com/alikadir/linux-unix-server-and-macos-local-management/blob/main/file-directory-management.md#link-like-shortcut-in-windows) the file into ```/etc/systemd/system/``` like the nginx configs
 
 [more detail creating a linux service](https://www.tecmint.com/create-systemd-service-linux/) 
 
