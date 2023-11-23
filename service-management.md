@@ -5,7 +5,7 @@
 ## Create a service
 create a service file on ```/etc/systemd/system/``` for our web application working as service (so it can restart when reboot or failure)
 ```bash
-vim /etc/systemd/system/nodejs.alikadir.com.service
+vim /etc/systemd/system/nodejs-alikadir.com.service
 ```
 edit for nodejs app
 ```bash
@@ -60,7 +60,7 @@ $ systemctl status | grep nginx
 
 ### Start, stop and restart service
 ```bash
-$ systemctl start nodejs.alikadir.com.service
+$ systemctl start nodejs-alikadir.com.service
 ```
 ```bash
 $ systemctl stop kastrel.alikadir.com.service
