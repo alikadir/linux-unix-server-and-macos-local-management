@@ -51,9 +51,10 @@ if you want you can put ```nodejs-alikadir.com.service``` into ```/lib/systemd/s
 
 ## Activate the Service
 [644](https://github.com/alikadir/linux-unix-server-and-macos-local-management/blob/main/user-permission.md#set-permission-with-number) = permission for configuration files, owner can read/write, group/others can read only.
+
 ```bash
 $ chmod 644 /etc/systemd/system/nodejs-alikadir-com.service
-$ systemctl enable nodejs-alikadir-com.service
+$ systemctl enable nodejs-alikadir-com.service --now
 ```
 
 
