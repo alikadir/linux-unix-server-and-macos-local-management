@@ -107,3 +107,4 @@ Examples:
 ```bash
 $ chmod 644 /etc/systemd/system/nodejs-alikadircom.service
 ```
+[more info for about number permission](https://www.multacom.com/faq/password_protection/file_permissions.htm)
