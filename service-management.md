@@ -5,7 +5,7 @@
 ## Create a service
 create a service file on ```/etc/systemd/system/``` for our web application working as service (so it can restart when reboot or failure)
 ```bash
-vim /etc/systemd/system/nodejs-alikadir.com.service
+vim /etc/systemd/system/nodejs-alikadir-com.service
 ```
 edit for nodejs app
 ```bash
@@ -45,9 +45,16 @@ Environment=CONNECTIONSTRING="Server=localhost;Port=5432;Database=alikadir-websi
 WantedBy=multi-user.target
 ```
 
-generally put ```nodejs-alikadir.com.service``` into ```/lib/systemd/system/``` and then [symboliclink](https://github.com/alikadir/linux-unix-server-and-macos-local-management/blob/main/file-directory-management.md#link-like-shortcut-in-windows) the file into ```/etc/systemd/system/``` like the nginx configs
+you can put ```nodejs-alikadir.com.service``` into ```/lib/systemd/system/``` and then [symboliclink](https://github.com/alikadir/linux-unix-server-and-macos-local-management/blob/main/file-directory-management.md#link-like-shortcut-in-windows) the file into ```/etc/systemd/system/``` like the nginx configs
 
 [more detail creating a linux service](https://www.tecmint.com/create-systemd-service-linux/) 
+
+## Activate the Service
+[644](https://github.com/alikadir/linux-unix-server-and-macos-local-management/blob/main/user-permission.md#set-permission-with-number) = permission for configuration files, owner can read/write, group/others can read only.
+```bash
+$ chmod 644 /etc/systemd/system/nodejs-alikadir-com.service
+$ systemctl enable nodejs-alikadir-com.service
+```
 
 
 ## SystemCtl
@@ -60,7 +67,7 @@ $ systemctl status | grep nginx
 
 ### Start, stop and restart service
 ```bash
-$ systemctl start nodejs-alikadir.com.service
+$ systemctl start nodejs-alikadir-com.service
 ```
 ```bash
 $ systemctl stop kastrel.alikadir.com.service
