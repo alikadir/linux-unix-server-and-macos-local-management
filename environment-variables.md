@@ -23,6 +23,7 @@ $ unset MY_ENV
 ```
 
 ## Apply all changes on .zshrc file to current terminal session
+not only export command (set environment variables), apply all commands in zshrc file
 ```bash
 $ source ~/.zshrc
 ```
