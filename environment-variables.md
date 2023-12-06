@@ -21,3 +21,8 @@ $ echo $MY_ENV
 ```bash
 $ unset MY_ENV
 ```
+
+## Apply all changes on .zshrc file to current terminal session
+```bash
+$ source ~/.zshrc
+```
