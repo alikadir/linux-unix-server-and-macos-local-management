@@ -30,6 +30,11 @@ grep -n = line number
 ```bash
 $ find . -type f -exec grep -n 'randevu-onayi 500' {} \; -exec echo {} \;
 ```
+wc -l = count number of returned line
+
+```bash
+$ find . -type f -exec grep -n 'randevu-onayi' {} \; | wc -l
+```
 
 ### Search any text in file or files in folder
 use grep command for search in file or recursively files in folder.
