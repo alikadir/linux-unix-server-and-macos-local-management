@@ -138,3 +138,12 @@ $ sudo ln -s /opt/homebrew/bin/idb /usr/local/bin/idb
 ```bash
 $ tail -f ~/mylog.txt
 ```
+
+### Both write file and stdout 
+write found.log
+
+pass stdout for line count with wc -l
+
+```bash
+$ grep 'deneme' ~/stdout.log | tee ~/found.log | wc -l
+```
