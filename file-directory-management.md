@@ -25,6 +25,11 @@ execute a command for the found file/folder path (remove file)
 ```bash
 $ find PROJECTS -type f -name "package-lock.json" -not -path "*/node_modules/*" -exec rm {} \; 
 ```
+grep -n = line number 
+
+```bash
+$ find . -type f -exec grep -n 'randevu-onayi 500' {} \; -exec echo {} \;
+```
 
 ### Search any text in file or files in folder
 use grep command for search in file or recursively files in folder.
