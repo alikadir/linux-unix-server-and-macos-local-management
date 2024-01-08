@@ -165,7 +165,7 @@ $ docker push alikadir/devops-sample-api-project --all-tags
 ```
 
 
----
+# Dockers
 
 
 ## MongoDB on docker
@@ -229,4 +229,12 @@ $ docker run -d --network elastic -e ELASTICSEARCH_URL=http://elasticsearch:9200
 ```
 
 kibana and elasticsearch must be on the same network for connecting!
+
+## Jenkins on docker
+http://localhost:8080
+
+initial password at ```/var/jenkins_home/secrets/initialAdminPassword```
+```
+$ docker run -p 8080:8080 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+```
 
