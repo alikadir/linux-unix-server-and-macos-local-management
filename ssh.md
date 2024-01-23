@@ -68,6 +68,7 @@ $ ssh-copy-id -i ~/.ssh/id_rsa.pub root@10.43.100.152
 ```bash
 $ cat ~/.ssh/id_rsa.pub | ssh root@10.43.100.152 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 ```
+for multiple key, each key in new line 
 
 ### Connect ssh with password automatically (apt-get install sshpass)
 ```bash
