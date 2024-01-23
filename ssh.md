@@ -33,7 +33,7 @@ $ ip a
 ## Install to Client Linux / MacOS
 ### Install ssh on ubuntu client
 
-SSH app includes **sFTP** app
+SSH app includes **sFTP and sCP** app
 
 ```bash
 $ sudo apt update
@@ -56,17 +56,23 @@ _don't forget activate password manager on iTerm_
 ```bash
 $ sftp root@111.111.111.11
 ```
+### Connect with scp 
+
+```bash
+$ scp root@111.111.111.11
+```
 
 
-### SSH key generator
+### Connect ssh without password (with ssh key)
 
+#### SSH public/private RSA key generator
 after the command run, will create 2 files that are ```id_rsa``` (private) and ```id_rsa.pub```(public) RSA key in ```~/.ssh/``` folder
 
 ```bash
 $ ssh-keygen
 ```
 
-### Connect ssh without password (with ssh key)
+#### Copy and then paste client public (id_rsa.pub) key to server
 ```bash
 $ ssh-copy-id root@10.43.100.152
 ```
