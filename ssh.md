@@ -90,7 +90,12 @@ $ cat ~/.ssh/id_rsa.pub | ssh root@10.43.100.152 "mkdir -p ~/.ssh && cat >> ~/.s
 ```
 for multiple key, each key in new line 
 
-### Connect ssh with password automatically (apt-get install sshpass)
+#### Connect ssh server without password
+```
+$ ssh -o StrictHostKeyChecking=no root@10.43.100.152
+```
+
+### Connect ssh with password automatically pass password (apt-get install sshpass)
 ```bash
 $ sshpass -p Abc12345! ssh root@10.43.100.152 "pm2 list"
 ```
