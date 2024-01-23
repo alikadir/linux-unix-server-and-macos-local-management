@@ -12,6 +12,8 @@ _don't forget activate password manager on iTerm_
 
 ### SSH key generator
 
+after the command run, will create 2 files that are ```id_rsa``` (private) and ```id_rsa.pub```(public) RSA key in ```~/.ssh/``` folder
+
 ```bash
 $ ssh-keygen
 ```
