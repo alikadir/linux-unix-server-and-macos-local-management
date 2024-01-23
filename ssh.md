@@ -30,7 +30,7 @@ the ip for connect to this server
 $ ip a
 ```
 
-## Install to Client Linux/MacOS
+## Install to Client Linux / MacOS
 ### Install ssh on ubuntu client
 
 SSH app includes **sFTP** app
