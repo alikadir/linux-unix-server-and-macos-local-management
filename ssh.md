@@ -2,8 +2,48 @@
 
 # SSH
 
-### Connect with ssh with password
+## Install to Server
+### Install ssh on ubuntu server
+SSH app includes **sFTP** app
 
+```bash
+$ sudo apt update
+$ sudo apt install openssh-server
+```
+### Install ssh on macos server
+System Settings > General > Sharing > Advanced > Remote Login(Toggle) > Info > ssh 
+
+### Start ssh service 
+```bash
+$ sudo systemctl status ssh
+$ sudo systemctl start ssh
+```
+### Allow ssh port at firewall
+default ssh port **22**
+```bash
+$ sudo ufw allow ssh
+```
+### Detect server IP adress
+the ip for connect to this server
+
+```bash
+$ ip a
+```
+
+## Install to Client Linux/MacOS
+### Install ssh on ubuntu client
+
+SSH app includes **sFTP** app
+
+```bash
+$ sudo apt update
+$ sudo apt install openssh-client
+```
+### Install ssh on macos client
+Macos have a ssh client by default
+
+## Connect 
+### Connect with ssh with password
 ```bash
 $ ssh root@111.111.111.11
 password:
@@ -11,42 +51,12 @@ password:
 
 _don't forget activate password manager on iTerm_
 
-
-### Install ssh on ubuntu server
-
-SSH app includes **sFTP** app
-
-```bash
-$ sudo apt update
-$ sudo apt install openssh-server
-```
-
 ### Connect with sftp 
 
 ```bash
 $ sftp root@111.111.111.11
 ```
 
-### Start ssh service 
-
-```bash
-$ sudo systemctl status ssh
-$ sudo systemctl start ssh
-```
-
-### Allow ssh port at firewall
-
-```bash
-$ sudo ufw allow ssh
-```
-
-### Detect server IP adress
-
-the ip for connect to this server
-
-```bash
-$ ip a
-```
 
 ### SSH key generator
 
