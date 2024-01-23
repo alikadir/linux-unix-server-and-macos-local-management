@@ -2,21 +2,15 @@
 
 # SSH
 
-### Connect with ssh 
+### Connect with ssh with password
 
 ```bash
 $ ssh root@111.111.111.11
+password:
 ```
 
 _don't forget activate password manager on iTerm_
 
-### SSH key generator
-
-after the command run, will create 2 files that are ```id_rsa``` (private) and ```id_rsa.pub```(public) RSA key in ```~/.ssh/``` folder
-
-```bash
-$ ssh-keygen
-```
 
 ### Install ssh on ubuntu server
 
@@ -52,6 +46,14 @@ the ip for connect to this server
 
 ```bash
 $ ip a
+```
+
+### SSH key generator
+
+after the command run, will create 2 files that are ```id_rsa``` (private) and ```id_rsa.pub```(public) RSA key in ```~/.ssh/``` folder
+
+```bash
+$ ssh-keygen
 ```
 
 ### Connect ssh without password (with ssh key)
