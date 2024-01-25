@@ -166,7 +166,7 @@ $ docker push alikadir/devops-sample-api-project --all-tags
 
 
 # Dockers
-
+-d = detach container
 
 ## MongoDB on docker
 ```bash
@@ -238,3 +238,8 @@ initial password at ```/var/jenkins_home/secrets/initialAdminPassword```
 $ docker run -p 8080:8080 -v $HOME/jenkins_home:/var/jenkins_home jenkins/jenkins:lts
 ```
 
+## Sonarqube
+default user and password are **admin**
+```
+$ docker run -d -p 9000:9000 sonarqube
+```
