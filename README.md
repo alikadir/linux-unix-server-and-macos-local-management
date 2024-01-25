@@ -36,3 +36,4 @@ Remember that while there are these differences, there are also many similaritie
 - [JSON format, download and management](json-management.md)
 - [Environment Variables](environment-variables.md)
 - [Git](git.md)
+- [Zip and Tar and Tar.gz](zip-tar-tar.gz.md)
