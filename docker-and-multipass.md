@@ -235,7 +235,7 @@ http://localhost:8080
 
 initial password at ```/var/jenkins_home/secrets/initialAdminPassword```
 ```
-$ docker run -p 8080:8080 -v $HOME/jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+$ docker run -d -p 8080:8080 -v $HOME/jenkins_home:/var/jenkins_home jenkins/jenkins:lts
 ```
 
 ## Sonarqube
