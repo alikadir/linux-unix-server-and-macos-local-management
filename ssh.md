@@ -65,6 +65,8 @@ $ scp root@111.111.111.11
 
 ### Connect ssh without password (with ssh key)
 
+!!! To connect to the server without using a password, you need to transfer the public key from the client's ```id_rsa.pub``` file to into the server's ```authorized_keys``` file.
+
 #### SSH public/private RSA key generator
 after the command run, will create 2 files that are ```id_rsa``` (private) and ```id_rsa.pub```(public) RSA key in ```~/.ssh/``` folder
 
