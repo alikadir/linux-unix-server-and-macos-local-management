@@ -88,6 +88,11 @@ $ mv .old-file .new-file
 $ rm -r .node_modules  
 ```
 
+### Remove file if exists 
+```bash
+$ [ -e "aaa.txt" ] && rm "aaa.txt"
+```
+
 ### Find and Replace text in a file
 -i = (in-place) owerride the file 
 -e = extended regular expression
