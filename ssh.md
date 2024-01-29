@@ -52,12 +52,12 @@ password:
 _don't forget activate password manager on iTerm_
 
 ### Connect with sftp 
-
+[for detail sftp](file-transfer.md#transfer-with-sftp) 
 ```bash
 $ sftp root@111.111.111.11
 ```
 ### Connect with scp 
-
+[for detail scp](file-transfer.md#transfer-with-secure-cp-on-local-machine) 
 ```bash
 $ scp root@111.111.111.11
 ```
