@@ -2,6 +2,11 @@
 
 # SSH
 
+```
+Client                                                                       Server
+~/.ssh/id_rsa.pub (publish key)    ====== maybe with ssh-id-copy =====>>     ~/.ssh/authorized_keys
+```
+
 ## Install to Server
 ### Install ssh on ubuntu server
 SSH app includes **sFTP** app
