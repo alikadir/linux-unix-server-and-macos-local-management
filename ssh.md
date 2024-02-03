@@ -3,8 +3,20 @@
 # SSH
 
 ```
-Client                                                                       Server
-~/.ssh/id_rsa.pub (publish key)    ====== maybe with ssh-id-copy =====>>     ~/.ssh/authorized_keys
+
+
+|-----[ Client ]-----|                                       |-------[ Server ]-------|
+|                    |                                       |                        |
+|                    |              ssh-id-copy              |                        |
+| ~/.ssh/id_rsa.pub  |   -------------- or ------------->    | ~/.ssh/authorized_keys |
+|                    |              manuel write             |                        |
+|                    |                                       |                        |
+|                    |                                       |                        |
+|                    |              ssh-keyscan              | ~/.ssh/id_rsa.pub      |
+| ~/.ssh/known_hosts |   <------------- or --------------    |         and            |
+|                    |         StrictHostKeyChecking         | hostname and IP hash   |
+|                    |                                       |                        |
+----------------------                                       --------------------------
 ```
 
 ## Install to Server
@@ -100,6 +112,14 @@ for multiple key, each key in new line
 #### Connect ssh server without password
 ```
 $ ssh -o StrictHostKeyChecking=no root@10.43.100.152
+```
+or 
+
+copy server _id_rsa.pub, IP and hostname hash_ info into ```known_hosts``` file in client
+
+-H = hashed
+```
+$ ssh-keyscan -H 10.43.100.152 >> ~/.ssh/known_hosts
 ```
 
 ### Connect ssh with password automatically pass password (apt-get install sshpass)
