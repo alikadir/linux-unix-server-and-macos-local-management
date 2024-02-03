@@ -17,6 +17,8 @@
 |                    |         StrictHostKeyChecking         | hostname and IP hash   |
 |                    |                                       |                        |
 ----------------------                                       --------------------------
+
+
 ```
 
 ## Install to Server
@@ -121,6 +123,14 @@ copy server _id_rsa.pub, IP and hostname hash_ info into ```known_hosts``` file 
 ```
 $ ssh-keyscan -H 10.43.100.152 >> ~/.ssh/known_hosts
 ```
+or 
+
+add _StrictHostKeyChecking_ setting in ```~/.ssh/config``` file
+```
+Host *
+    StrictHostKeyChecking no
+```
+
 
 ### Connect ssh with password automatically pass password (apt-get install sshpass)
 ```bash
