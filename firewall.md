@@ -45,3 +45,8 @@ $ sudo ufw deny ssh
 ```bash
 $ sudo ufw delete allow 22
 ```
+## Trace domain and network package
+```tracert``` is in windows 
+```
+$ traceroute aliveli.com
+```
