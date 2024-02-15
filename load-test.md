@@ -23,5 +23,5 @@ $ ab -n 100 -c 10 https://deneme.com/
 #### Another test 
 -k = adds a KeepAlive header allowing the server to keep the connection open so it can be used again.
 ```
-$ ab -k -n 1000 -c 1000 https://deneme.com/
+$ ab -k -n 10000 -c 100 https://deneme.com/
 ```
