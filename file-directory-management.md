@@ -61,6 +61,12 @@ $ man curl | grep "post"
 $ grep console.log -r . --exclude-dir=node_modules
 ```
 
+### Manipulating data with awk in file 
+Awk is a scripting language used for manipulating data and generating reports.
+```
+$ awk '{print}' employee.txt
+```
+
 ### View file content
 ```bash
 $ cat a.txt
