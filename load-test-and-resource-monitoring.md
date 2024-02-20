@@ -1,10 +1,12 @@
 [<< Back](README.md)
 
-# Load Test
+# Load Test and Resource Monitoring
 
 
 
-## Apache Banch
+## Load Test
+
+### Apache Banch
 
 #### Install ab on Linux
 ```
@@ -25,3 +27,17 @@ $ ab -n 100 -c 10 https://deneme.com/
 ```
 $ ab -k -n 10000 -c 1000 https://deneme.com/
 ```
+
+## Resource Monitoring
+
+### btop
+
+#### Install btop on Ubuntu
+```
+$ snap install btop
+```
+#### Install btop on MacOS
+```
+$ brew install btop
+```
+
