@@ -64,8 +64,26 @@ $ grep console.log -r . --exclude-dir=node_modules
 ### Manipulating data with awk in file 
 Awk is a scripting language used for manipulating data and generating reports.
 ```
-$ awk '{print}' employee.txt
+$ cat > employee.txt
+
+    ajay manager account 45000
+    sunil clerk account 25000
+    varun manager sales 50000
+    amit manager account 47000
+    tarun peon sales 15000
+    deepak clerk sales 23000
+    sunil peon sales 13000
+    satvik director purchase 80000
 ```
+```
+$ awk '/manager/ {print}' employee.txt 
+```
+```
+    ajay manager account 45000
+    varun manager sales 50000
+    amit manager account 47000 
+```
+
 
 ### View file content
 ```bash
