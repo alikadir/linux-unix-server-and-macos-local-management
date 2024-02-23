@@ -9,3 +9,13 @@ press ```/``` and type the word and press ```Enter``` and then, press ```N``` to
 ### End of file
 
 press ```G``` for end of file, press ```gg``` start of file 
+
+### Show line numbers
+```
+:set number
+```
+
+### Go line number 
+```
+:<line number>
+```
