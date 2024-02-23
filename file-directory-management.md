@@ -167,6 +167,16 @@ $ sudo ln -s /opt/homebrew/bin/idb /usr/local/bin/idb
 ```bash
 $ tail -f ~/mylog.txt
 ```
+-10f = last 10 record follow
+```
+$ tail -10f /var/log/nginx/aliveli.com-access.log
+```
+
+### Track and search on a file
+-100f = last 100 record follow
+```
+$ tail -100f /var/log/nginx/aliveli.com-access.log | grep POST
+```
 
 ### Both write file and stdout 
 write found.log
