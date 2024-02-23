@@ -175,7 +175,7 @@ $ tail -10f /var/log/nginx/aliveli.com-access.log
 ### Track and search on a file
 -100f = last 100 record follow
 ```
-$ tail -100f /var/log/nginx/aliveli.com-access.log | grep POST
+$ tail -100f /var/log/nginx/aliveli.com-access.log | grep 'POST'
 ```
 
 ### Both write file and stdout 
