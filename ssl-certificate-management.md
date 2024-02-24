@@ -191,3 +191,9 @@ xMQisvRV+HMVCCn5XwZN7QMZXsVzvBDJXnoRMfQEMt7IbhHTe3bEvA==
 ```bash
 $ openssl reg -new -key alikkadir.key -out alikadir.csr -subj "/CN=ali@kadir.com/O=DevTeam"
 ```
+
+### Test SSL connectivity
+Test SSL connectivity with ```s_client``` commands to check whether the certificate is valid, trusted, and complete.
+```
+$ openssl s_client -connect github.com:443
+```
