@@ -38,3 +38,4 @@ Remember that while there are these differences, there are also many similaritie
 - [Git](git.md)
 - [Zip and Tar and Tar.gz](zip-tar-tar.gz.md)
 - [Load Test and Resource Monitoring](load-test-and-resource-monitoring.md)
+- [Basic Bash commands](bash-commands.md)
