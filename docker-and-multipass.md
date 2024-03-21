@@ -213,7 +213,7 @@ $ docker run -d -e MYSQL_ROOT_PASSWORD=Abc12345 -v $HOME/db/mysql:/var/lib/mysql
 ## SqlServer on docker
 sa is default user
 ```bash
-$ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Abc12345" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
+$ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Abc12345" -v $HOME/db/mssql:/var/opt/mssql/data  -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
 ```
 
 ## RabbitMQ with enabled management ui plugin on docker
