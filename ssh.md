@@ -159,5 +159,17 @@ $ ssh root@75.43.71.102 -L 8080:75.43.71.102:3000
 $ curl localhost:8080
 ```
 
+#### if error occured when access the port that forwarding after ssh connection
+```
+channel 4: open failed: administratively prohibited: open failed
+channel 5: open failed: administratively prohibited: open failed
+channel 4: open failed: administratively prohibited: open failed
+channel 5: open failed: administratively prohibited: open failed
+channel 4: open failed: administratively prohibited: open failed
+```
+
+modified to **server** ssh config file ```AllowTcpForwarding yes``` in ```/etc/ssh/sshd_config``` and then restart server ssh service ```sudo systemctl restart sshd```
+
+
 
 
