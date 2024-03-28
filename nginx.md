@@ -41,6 +41,14 @@ $ sudo ufw allow 'Nginx Full'
 $ systemctl start nginx
 ```
 
+#### !!! if error occured when first start 
+```
+Mar 28 13:23:02 AKBTestServer nginx[856]: nginx: [emerg] socket() [::]:80 failed (97: Unknown error)
+Mar 28 13:23:02 AKBTestServer nginx[856]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 28 13:23:02 AKBTestServer systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+```
+[remove](https://serverfault.com/a/566318) ```[::]:80``` line in default config file (``` /etc/nginx/sites-available/default ```) because ```[::]:80``` for IPv6 config.
+
 ### Setup a site on Nginx 
 
 create config file in sites-available directory
