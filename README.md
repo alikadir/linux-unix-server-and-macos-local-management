@@ -14,6 +14,11 @@ Unix and Linux are both operating systems, but there are some key differences be
 
 Remember that while there are these differences, there are also many similarities due to Linux's Unix-like nature. Many skills and knowledge transfer between the two
 
+### Get Linux OS info
+```
+$ cat /etc/os-release
+```
+
 ## Index
 - [File and Directory Management](file-directory-management.md)
 - [Redirection method in Linux and Unix](redirection.md)
