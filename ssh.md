@@ -155,7 +155,7 @@ $ sshpass -p Abc12345! ssh root@10.43.100.152 "pm2 list" -o StrictHostKeyCheckin
 -N = do not execute remote command
 
 ```bash
-$ ssh root@75.43.71.102 -L 8080:75.43.71.102:3000
+$ ssh root@75.43.71.102 -L 8080:localhost:3000
 $ curl localhost:8080
 ```
 
