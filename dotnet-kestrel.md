@@ -77,6 +77,10 @@ WantedBy=multi-user.target
 ```bash
 $ systemctl start kestrel.alikadir.com.service
 ```
+```bash
+$ journalctl -fu kastrel.alikadir.com.service
+```
+
 [Go another commands](service-management.md) for service management 
 
 now working the app on http://localhost:5000
