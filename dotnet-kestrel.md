@@ -78,7 +78,7 @@ WantedBy=multi-user.target
 $ systemctl start kestrel.alikadir.com.service
 ```
 ```bash
-$ journalctl -fu kastrel.alikadir.com.service
+$ journalctl -fu kestrel.alikadir.com.service
 ```
 
 [Go another commands](service-management.md) for service management 
