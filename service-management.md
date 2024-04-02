@@ -27,6 +27,7 @@ or edit for dotnet app
 ```bash
 [Unit]
 Description= Ali Kadir Personal Web Site
+After=docker.service
 
 [Service]
 WorkingDirectory=/var/www/alikadir.com/
