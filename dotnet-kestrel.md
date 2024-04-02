@@ -57,9 +57,10 @@ add following configuration to above file
 ```bash
 [Unit]
 Description= Ali Kadir's Personal Web Site
+After=docker.service
 
 [Service]
-WorkingDirectory=/var/www/alikadir.com/
+WorkingDirectory=/var/www/alikadir.com
 ExecStart=/usr/bin/dotnet /var/www/alikadir.com/alikadir-website.dll
 Restart=always
 # Restart service after 10 seconds if the dotnet service crashes:
