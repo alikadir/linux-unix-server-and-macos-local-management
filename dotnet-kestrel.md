@@ -75,12 +75,8 @@ Environment=CONNECTIONSTRING="Server=localhost;Port=5432;Database=alikadir-websi
 [Install]
 WantedBy=multi-user.target
 ```
-```bash
-$ systemctl start kestrel.alikadir.com.service
-```
-```bash
-$ journalctl -fu kestrel.alikadir.com.service
-```
+
+[Activate the service and start](service-management.md#activate-the-service)
 
 [Go another commands](service-management.md) for service management 
 
