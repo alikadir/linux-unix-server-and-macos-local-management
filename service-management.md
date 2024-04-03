@@ -97,6 +97,9 @@ $ journalctl -fu kestrel.alikadir.com.service
 ```bash
 $ journalctl -u kestrel.alikadir.com.service --since today
 ```
+```bash
+$ journalctl -u kestrel.alikadir.com.service --reverse
+```
 
 # Service Management on MacOS
 
