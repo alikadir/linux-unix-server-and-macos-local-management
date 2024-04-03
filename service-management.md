@@ -11,9 +11,12 @@ edit for nodejs app
 ```bash
 [Unit]
 Description=Pi WiFi Hotspot Service
+# wait network service 
 After=network.target
 
 [Service]
+# sleep 30 sec before start
+ExecStartPre=/bin/sleep 30
 WorkingDirectory=/home/pi/Node/PiWiFi
 ExecStart=/usr/bin/nodejs /home/pi/Node/PiWiFi/app.js
 Restart=on-failure
