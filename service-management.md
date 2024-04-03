@@ -75,10 +75,10 @@ $ systemctl status | grep nginx
 $ systemctl start nodejs-alikadir-com.service
 ```
 ```bash
-$ systemctl stop kastrel.alikadir.com.service
+$ systemctl stop kestrel.alikadir.com.service
 ```
 ```bash
-$ systemctl restart kastrel.alikadir.com.service
+$ systemctl restart kestrel.alikadir.com.service
 ```
 general service path ```/etc/systemd/system/kastrel.alikadir.com.service```
 
@@ -92,7 +92,10 @@ general service path ```/etc/systemd/system/kastrel.alikadir.com.service```
 -u = unit
 
 ```bash
-$ journalctl -fu kastrel.alikadir.com.service
+$ journalctl -fu kestrel.alikadir.com.service
+```
+```bash
+$ journalctl -u kestrel.alikadir.com.service --since today
 ```
 
 # Service Management on MacOS
