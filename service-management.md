@@ -82,7 +82,7 @@ $ systemctl restart kestrel.alikadir.com.service
 ```
 general service path ```/etc/systemd/system/kestrel.alikadir.com.service```
 
-!!! [To remove sudo password requirement on systemctl operations](user-management.md#sudo-operation-without-password-etcsudoers)
+!!! [To remove sudo password requirement on systemctl operations](user-management.md#sudo-operation-without-password)
 
 ## JournalCtl
 
