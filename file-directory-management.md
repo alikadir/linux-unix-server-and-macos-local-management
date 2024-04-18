@@ -97,6 +97,12 @@ $ cat a.txt b.txt c.txt > sum.txt
 $ cat a.txt -n
 ```
 
+### Copy file or directory 
+-r = recursivly
+
+```
+$ cp -r WebSite.Main/ WebSite.Main.Old/
+```
 
 ### Rename file or directory
 use the mv command for rename
