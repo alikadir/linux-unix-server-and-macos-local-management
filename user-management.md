@@ -120,3 +120,46 @@ Retype new password: 1234
 passwd: password updated successfully.
 $
 ```
+
+### Sudo operation without password (/etc/sudoers)
+To remove the password requirement for sudo on systemctl operations.
+
+example;
+```
+$ sudo systemctl status kestrel.alikadir.com.service
+[sudo] password for alikadir:
+```
+or 
+```
+on CI/CD Runner.
+
+$ ssh -o StrictHostKeyChecking=no alikadir@110.200.179.101 "sudo systemctl restart kestrel.alikadir.com.service"
+
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+script returned exit code 1
+```
+
+Solution;
+
+```
+$ sudo visudo
+```
+and then add the following line before ```#includedir /etc/sudoers.d``` command 
+```
+# See sudoers(5) for more information on "@include" directives:
+
+alikadir ALL=(ALL) NOPASSWD:/usr/bin/systemctl start kestrel.alikadir.com.service
+alikadir ALL=(ALL) NOPASSWD:/usr/bin/systemctl stop kestrel.alikadir.com.service
+alikadir ALL=(ALL) NOPASSWD:/usr/bin/systemctl restart kestrel.alikadir.com.service
+
+
+@includedir /etc/sudoers.d
+```
+Done! 
+
+```
+$ sudo systemctl restart kestrel.alikadir.com.service
+restart successfully!
+```
+
