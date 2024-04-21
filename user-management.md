@@ -121,7 +121,7 @@ passwd: password updated successfully.
 $
 ```
 
-### Sudo operation without password 
+### Sudo operation without ask password 
 To remove the password requirement for sudo on systemctl operations.
 
 example;
