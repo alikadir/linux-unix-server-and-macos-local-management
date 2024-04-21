@@ -136,6 +136,12 @@ $ sed 's/old-text/new-text/g' /Users/alikadir/Desktop/input.txt > /Users/alikadi
 $ myPet="your_value"
 $ sed -ie "s/bird/${myPet}/g" /Users/alikadir/Desktop/input.txt
 ```
+escape special character with ```\```
+```
+$ sed -i -e 's/string[2] { "http://localhost:5001", "https://test.alikadir.com" }/string[1] { "http://localhost:5001" }/g' Program.cs  
+$ sed -i -e 's/string\[2\] { "http:\/\/localhost:5001", "https:\/\/mmapi.memorial.com.tr" }/string\[1\] { "http:\/\/localhost:5001" }/g' Program.cs
+```
+escaped the special characters ```/``` and ```[]```  with ```\``` 
 
 ### Convert text to base64
 ```bash
