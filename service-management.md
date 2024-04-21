@@ -67,22 +67,22 @@ $ systemctl enable nodejs-alikadir-com.service --now
 
 ### Services list filtered with nginx
 ```bash
-$ systemctl status | grep nginx
+$ systemctl 💡 | grep nginx
 ```
 
 ### Start, stop and restart service
 ```bash
-$ systemctl start nodejs-alikadir-com.service
+$ sudo systemctl start nodejs-alikadir-com.service
 ```
 ```bash
-$ systemctl stop kestrel.alikadir.com.service
+$ sudo systemctl stop kestrel.alikadir.com.service
 ```
 ```bash
-$ systemctl restart kestrel.alikadir.com.service
+$ sudo systemctl restart kestrel.alikadir.com.service
 ```
 general service path ```/etc/systemd/system/kestrel.alikadir.com.service```
 
-!!! [To remove sudo password requirement on systemctl operations](user-management.md#sudo-operation-without-password)
+ [To remove sudo password requirement on systemctl operations](user-management.md#sudo-operation-without-ask-password)
 
 ## JournalCtl
 
