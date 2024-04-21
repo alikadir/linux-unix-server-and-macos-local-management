@@ -129,10 +129,8 @@ example;
 $ sudo systemctl status kestrel.alikadir.com.service
 [sudo] password for alikadir:
 ```
-or 
+or on CI/CD Runner.
 ```
-on CI/CD Runner.
-
 $ ssh -o StrictHostKeyChecking=no alikadir@110.200.179.101 "sudo systemctl restart kestrel.alikadir.com.service"
 
 sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
