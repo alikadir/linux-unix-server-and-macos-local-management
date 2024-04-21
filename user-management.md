@@ -160,4 +160,4 @@ Done!
 $ sudo systemctl restart kestrel.alikadir.com.service
 restart successfully!
 ```
-
+Sudo operation done without ask any password.
