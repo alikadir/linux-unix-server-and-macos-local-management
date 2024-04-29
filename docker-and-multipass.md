@@ -215,6 +215,18 @@ sa is default user
 ```bash
 $ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Abc12345" -v $HOME/db/mssql:/var/opt/mssql/data  -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
 ```
+connection testing CLI
+```bash
+$ npm install -g mssql
+$ echo "SELECT name FROM master.dbo.sysdatabases" | mssql mssql.conn.json
+$ cat mssql.conn.json
+{
+    "user": "sa",
+    "password": "Abc12345",
+    "server": "localhost",
+    "database": "master"
+}
+```
 
 ## RabbitMQ with enabled management ui plugin on docker
 http://localhost:8080
