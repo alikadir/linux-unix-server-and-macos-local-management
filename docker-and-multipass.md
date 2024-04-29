@@ -262,3 +262,6 @@ default user and password are **admin**
 ```
 $ docker run -d -p 9000:9000 sonarqube
 ```
+```bash
+$ docker run -d -v $HOME/sonarqube/data:/opt/sonarqube/data -v $HOME/sonarqube/logs:/opt/sonarqube/logs -v $HOME/sonarqube/extensions:/opt/sonarqube/extensions  -p 9000:9000 sonarqube
+```
