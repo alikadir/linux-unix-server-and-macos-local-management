@@ -24,6 +24,7 @@ $ grep "number" < <(man grep)
 ## Stdout
 ```bash
 $ [command] > Stdout (file create)
+$ echo "aliveli" > abc.txt
 ```
 ```bash
 $ [command] >> Stdin (file append)
