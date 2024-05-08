@@ -16,7 +16,7 @@ contains all device files, which are not regular files but instead refer to vari
 contains system-global configuration files, which affect the system's behavior for all users.
 
 ### /home
-home sweet home, this is the place for users' home directories.
+home sweet home, this is the place for users' home directories. ```/home/alikadir/```
 
 ### /lib 
 contains very important dynamic libraries and kernel modules
