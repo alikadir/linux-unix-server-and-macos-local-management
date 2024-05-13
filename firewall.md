@@ -45,8 +45,23 @@ $ sudo ufw deny ssh
 ```bash
 $ sudo ufw delete allow 22
 ```
+
 ## Trace domain and network package
 ```tracert``` is in windows 
 ```
 $ traceroute aliveli.com
 ```
+
+## Check remote port connect
+-v = verbose
+
+```
+$ netcat mysubdomain.aliveli.com 1433 -v
+mysubdomain.aliveli.com [101.101.179.201] 1433 (ms-sql-s) open
+```
+
+```
+$ netcat github.com 22 -v
+github.com [140.82.121.3] 22 (ssh) open
+```
+
