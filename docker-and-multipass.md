@@ -98,6 +98,20 @@ for install docker on Ubuntu visit [link](https://docs.docker.com/engine/install
 $ docker ps -a
 ```
 
+### Get container info 
+
+```bash
+$ docker inspect <CONTAINER_ID>
+```
+
+-n = line numbers
+```bash
+$ docker inspect 62862d1effe1 | grep 'Mount' -n
+31:        "MountLabel": "",
+145:        "Mounts": [
+```
+
+
 ### Remove container
 
 ```bash
