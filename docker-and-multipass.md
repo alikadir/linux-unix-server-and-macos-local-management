@@ -110,7 +110,15 @@ $ docker inspect 62862d1effe1 | grep 'Mount' -n
 31:        "MountLabel": "",
 145:        "Mounts": [
 ```
+### Connect to container
 
+-i = interactive
+
+-t = Allocate a pseudo-TTY (?)
+
+```bash
+$ docker exec -it <CONTAINER_ID> /bin/bash
+```
 
 ### Remove container
 
