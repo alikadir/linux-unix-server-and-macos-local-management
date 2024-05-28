@@ -3,7 +3,23 @@
 # Git
 [Git](https://git-scm.com) is a free and open source distributed version control system 
 
-### Tags  
+
+### Amend Commit 
+```bash
+$ git add .  #if you want add or change file the previous commit 
+$ git commit --amend -m "if you want add new commit message"
+```
+
+### Remove Commit 
+- ```git revert <CommitID> ``` revert the commit and create new revert commit
+- ```git reset --HARD <CommitID>``` remove all commits after the CommitID
+
+### Difference 
+```bash
+$ git diff <StartCommitID>..<EndCommitID> <ifyouwantfilename>
+```
+
+## Tags  
 Tag is very much like a branch that doesn’t change and also it’s just a pointer to a specific commit.
 
 #### Show tag
@@ -36,7 +52,7 @@ $ git tag --delete 1.0.0
 $ git push origin --delete 1.0.0
 ```
 
-### Another User Problem
+## Another User Problem
 ```bash
 $ git config --global user.email "alikadirbagcioglu@gmail.com"
 $ git config --global user.name "Ali Kadir Bagcioglu"
