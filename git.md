@@ -19,6 +19,14 @@ $ git commit --amend -m "if you want add new commit message"
 $ git diff <StartCommitID>..<EndCommitID> <ifyouwantfilename>
 ```
 
+## Branch
+- ```git brach``` list all branchs
+- ```git branch <BranchName>``` create new branch but NOT switched the branch
+- ```git branch -D <BranchName>``` remove the branch 
+- ```git checkout <BranchName>``` switch this branch name
+- ```git checkout -b <BranchName>``` create branch and switch the branch
+
+
 ## Stash
 - ```git stash``` or ```git stash create``` create stash and all uncommited files move to stash
 - ```git stash list``` list all stash
