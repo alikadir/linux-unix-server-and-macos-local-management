@@ -3,7 +3,7 @@
 # Git
 [Git](https://git-scm.com) is a free and open source distributed version control system 
 
-
+## Commit
 ### Amend Commit 
 ```bash
 $ git add .  #if you want add or change file the previous commit 
@@ -18,6 +18,14 @@ $ git commit --amend -m "if you want add new commit message"
 ```bash
 $ git diff <StartCommitID>..<EndCommitID> <ifyouwantfilename>
 ```
+
+## Stash
+- ```git stash``` or ```git stash create``` create stash and all uncommited files move to stash
+- ```git stash list``` list all stash
+- ```git stash apply <StashID>``` apply this ID to Working Director on current branch
+- ```git stash apply``` apply last stash id
+- ```git stash pop``` apply last stash id and remove the stash id from stash list
+- ```git stash clear``` remove all stash ids from stash list 
 
 ## Tags  
 Tag is very much like a branch that doesn’t change and also it’s just a pointer to a specific commit.
