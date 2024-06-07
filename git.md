@@ -23,6 +23,8 @@ $ git diff <StartCommitID>..<EndCommitID> <ifyouwantfilename>
 - ```git log``` show all commits of current branch
 - ```git log <BranchName>``` show all commits of the branch
 
+### Resolve Conflicts with Sourcetree
+```Sourcetree Menu > Actions > Resolve Conflicts > Launch External Merge Tool```
 
 ## Branch
 - ```git brach``` list all branchs
