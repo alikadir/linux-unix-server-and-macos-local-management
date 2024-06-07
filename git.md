@@ -25,6 +25,7 @@ $ git diff <StartCommitID>..<EndCommitID> <ifyouwantfilename>
 - ```git branch -D <BranchName>``` remove the branch 
 - ```git checkout <BranchName>``` switch this branch name
 - ```git checkout -b <BranchName>``` create branch and switch the branch
+- !!!```git checkout -b <BranchName> <SpecificCommitID>``` create branch from specific commit id and switch the branch
 
 
 ## Stash
