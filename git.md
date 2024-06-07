@@ -12,7 +12,7 @@ $ git commit --amend -m "if you want add new commit message"
 
 ### Remove Commit 
 - ```git revert <CommitID> ``` revert the commit and create new revert commit
-- ```git reset --HARD <CommitID>``` remove all commits after the CommitID
+- ```git reset --hard <CommitID>``` remove all commits after the CommitID
 
 ### Difference 
 ```bash
