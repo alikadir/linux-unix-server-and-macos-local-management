@@ -3,9 +3,13 @@
 # Vi / Vim
 
 ### Copy, Cut, Paste
-- press ```y``` to yank (copy) the content
-- press ```d``` to delete (cut) the content
-- press ```p``` to put (paste) the content
+- press ```y``` to yank (copy) in terminal context
+- press ```d``` to delete (cut) in terminal context
+- press ```p``` to put (paste) in terminal context
+
+- press ```"+y``` to yank (copy) in OS clipboard
+- press ```"+d``` to delete (cut) in OS clipboard
+- press ```CMD+v``` to put (paste) in OS clipboard
 
 ### Undo (CRTL+Z)
 press ```u``` undo
