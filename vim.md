@@ -6,7 +6,7 @@
 - press ```y``` to yank (copy) in terminal context
 - press ```d``` to delete (cut) in terminal context
 - press ```p``` to put (paste) in terminal context
-
+- ========| in visual mode |===========
 - press ```"+y``` to yank (copy) in OS clipboard
 - press ```"+d``` to delete (cut) in OS clipboard
 - press ```CMD+v``` to put (paste) in OS clipboard
