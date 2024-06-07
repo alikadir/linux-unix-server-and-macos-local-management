@@ -19,6 +19,11 @@ $ git commit --amend -m "if you want add new commit message"
 $ git diff <StartCommitID>..<EndCommitID> <ifyouwantfilename>
 ```
 
+### Log
+- ```git log``` show all commits of current branch
+- ```git log <BranchName>``` show all commits of the branch
+
+
 ## Branch
 - ```git brach``` list all branchs
 - ```git branch <BranchName>``` create new branch but NOT switched the branch
