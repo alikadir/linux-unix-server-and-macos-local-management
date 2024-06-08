@@ -30,7 +30,7 @@ $ git diff <StartCommitID>..<EndCommitID> <ifyouwantfilename>
 ## Cherry-Pick 
 - ```git checkout <BranchName>``` first step checkout branch 
 - ```git cherry-pick <OtherBranchCommitID>``` second step cherry pick commit on another branch
-- if occured a conflict then resolve the conflict as third step
+- if occured a conflict then resolve the conflict as third step (if conflicts not changes local file use ```git commit --allow-empty```)
 - fix conflicts and run ```git cherry-pick --continue``` as fourth steps
 - optional use ```git cherry-pick --skip``` to skip this patch
 - optional use ```git cherry-pick --abort``` to cancel the cherry-pick operation
