@@ -25,6 +25,14 @@ $ git diff <StartCommitID>..<EndCommitID> <ifyouwantfilename>
 
 ### Resolve Conflicts with Sourcetree
 ```Sourcetree Menu > Actions > Resolve Conflicts > Launch External Merge Tool```
+ 
+### Cherry-Pick 
+- ```git checkout <BranchName>``` first step checkout branch 
+- ```git cherry-pick <OtherBranchCommitID>``` second step cherry pick commit on another branch
+- if occured a conflict then resolve the conflict as third step
+- fix conflicts and run ```git cherry-pick --continue```
+- use ```git cherry-pick --skip``` to skip this patch
+- use ```git cherry-pick --abort``` to cancel the cherry-pick operation
 
 ## Branch
 - ```git brach``` list all branchs
