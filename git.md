@@ -30,8 +30,10 @@ $ git diff <StartCommitID>..<EndCommitID> <ifyouwantfilename>
 ## Cherry-Pick 
 - ```git checkout <BranchName>``` first step checkout branch 
 - ```git cherry-pick <OtherBranchCommitID>``` second step cherry pick commit on another branch
-- if occured a conflict then resolve the conflict as third step (if conflicts not changes local file use ```git commit --allow-empty```)
-- if created any .orig file extension after resolve conflicts, remove it because backup file 
+- Create a commit same message text 
+-  ========== Normally Done =========== But if a conflict occurs see the following lines
+- if a conflict occurs then resolve the conflict as third step (if conflicts not changes local file use ```git commit --allow-empty```)
+- if any .orig file extension creates after resolve conflicts, remove it because backup file 
 
 ```
 $ git status
