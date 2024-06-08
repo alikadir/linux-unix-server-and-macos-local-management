@@ -18,6 +18,30 @@ $ git commit --amend -m "if you want add new commit message"
 ```bash
 $ git diff <StartCommitID>..<EndCommitID> <ifyouwantfilename>
 ```
+Beyond Compare diff and merge tool settings
+```
+[diff]
+  	tool = bcomp
+[difftool]
+  	prompt = false
+[difftool "bcomp"]
+  	trustExitCode = true
+  	cmd = "/usr/local/bin/bcomp" \"$LOCAL\" \"$REMOTE\"
+[merge]
+  	tool = bcomp
+[mergetool]
+  	prompt = false
+[mergetool "bcomp"]
+  	trustExitCode = true
+  	cmd = "/usr/local/bin/bcomp" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+[user]
+	name = Ali Kadir Bagcioglu
+	email = alikadirbagcioglu@gmail.com
+```
+```
+$ git difftool <StartCommitID>..<EndCommitID> <ifyouwantfilename>
+```
+
 
 ### Log
 - ```git log``` show all commits of current branch
