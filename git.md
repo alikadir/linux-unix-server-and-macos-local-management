@@ -25,6 +25,7 @@ $ git diff <StartCommitID>..<EndCommitID> <ifyouwantfilename>
 
 ### Resolve Conflicts with Sourcetree
 - Only once ```Sorucetree > Settings > Diff > External Diff/Merge > Visual Diff Tool and Merge Tool > Beyond Compare```
+- Only once ```Beyond Compare Menu > Install Command Line Tools``` 
 - ```Sourcetree Menu > Actions > Resolve Conflicts > Launch External Merge Tool```
  
 ## Cherry-Pick 
