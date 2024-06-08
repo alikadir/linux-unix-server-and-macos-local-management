@@ -18,7 +18,7 @@ $ git commit --amend -m "if you want add new commit message"
 ```bash
 $ git diff <StartCommitID>..<EndCommitID> <ifyouwantfilename>
 ```
-Beyond Compare diff and merge tool settings
+Beyond Compare diff and merge tool settings in ```~/.gitconfig```
 ```
 [diff]
   	tool = bcomp
