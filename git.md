@@ -24,7 +24,8 @@ $ git diff <StartCommitID>..<EndCommitID> <ifyouwantfilename>
 - ```git log <BranchName>``` show all commits of the branch
 
 ### Resolve Conflicts with Sourcetree
-```Sourcetree Menu > Actions > Resolve Conflicts > Launch External Merge Tool```
+- Only once ```Sorucetree > Settings > Diff > External Diff/Merge > Visual Diff Tool and Merge Tool > Beyond Compare```
+- ```Sourcetree Menu > Actions > Resolve Conflicts > Launch External Merge Tool```
  
 ## Cherry-Pick 
 - ```git checkout <BranchName>``` first step checkout branch 
