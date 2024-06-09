@@ -79,7 +79,7 @@ $ git status
 ## Merge 
 - ```git checkout main``` 
 - ```git merge feature/foo``` integrated all commits from ```feature/foo``` into ```main``` branch
-- ```Fast-forward``` iki branchde birinin son commitinde digerinin ilk commit'i basliyorsa merge islemi otomatik olarak fast-forward yapilir. fast-forward merge isleminden sonra merge commit'i olusmaz 
+- ```Fast-forward``` iki branchde birinin son commitinde digerinin ilk commit'i basliyorsa merge islemi otomatik olarak fast-forward yapilir. fast-forward merge isleminden sonra merge commit'i olusmaz. commit zamanlari ic ice gecmis ise gene tarihsel olarak eklenir fakat birlestirme icin bir merge commit olusturulur. FastForward varsa merge commit'e gerek kalmamistir ama fastforward durumu yoksa mergecommit ile kodlar son hale getirilir. 
   
 ### Squash Merge
 - ```git checkout main``` 
