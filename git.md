@@ -77,7 +77,11 @@ $ git status
 
 ## Merge 
 - ```git checkout main``` 
-- ```git merge feature/foo``` integrated all commits from ```feature/foo``` into ```main``` branch 
+- ```git merge feature/foo``` integrated all commits from ```feature/foo``` into ```main``` branch
+  
+### Squash Merge
+- ```git checkout main``` 
+- ```git merge feature/foo --squash``` all commits from ```feature/foo``` combined into single commit to ```main``` branch
 
 ## Rebase
 - ```git checkout main```
