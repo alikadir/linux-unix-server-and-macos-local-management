@@ -48,6 +48,7 @@ $ git mergetool file.txt
 ### Log
 - ```git log``` show all commits of current branch
 - ```git log <BranchName>``` show all commits of the branch
+- ```git log <BranchName> --oneline``` show all commits of the branch as single lines
 
 ### Resolve Conflicts with Sourcetree
 - Only once ```Sorucetree > Settings > Diff > External Diff/Merge > Visual Diff Tool and Merge Tool > Beyond Compare```
