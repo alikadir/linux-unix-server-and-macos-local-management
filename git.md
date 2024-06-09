@@ -78,6 +78,7 @@ $ git status
 ## Merge 
 - ```git checkout main``` 
 - ```git merge feature/foo``` integrated all commits from ```feature/foo``` into ```main``` branch
+- ```Fast-forward``` iki branchde birinin son commitinde digerinin ilk commit'i basliyorsa merge islemi otomatik olarak fast-forward yapilir
   
 ### Squash Merge
 - ```git checkout main``` 
