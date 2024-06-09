@@ -41,7 +41,9 @@ Beyond Compare diff and merge tool settings in ```~/.gitconfig```
 ```
 $ git difftool <StartCommitID>..<EndCommitID> <ifyouwantfilename>
 ```
-
+```
+$ git mergetool file.txt
+```
 
 ### Log
 - ```git log``` show all commits of current branch
