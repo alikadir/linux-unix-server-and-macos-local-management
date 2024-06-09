@@ -75,6 +75,15 @@ $ git status
 - optional use ```git cherry-pick --skip``` to skip this patch
 - optional use ```git cherry-pick --abort``` to cancel the cherry-pick operation
 
+## Merge 
+- ```git checkout main``` 
+- ```git merge feature/foo``` integrated all commits from ```feature/foo``` into ```main``` branch 
+
+## Rebase
+- ```git checkout main```
+- ```git rebase feature/foo``` integrated all commits from ```feature/foo``` into ```main``` branch 
+
+
 ## Branch
 - ```git brach``` list all branchs
 - ```git branch <BranchName>``` create new branch but NOT switched the branch
