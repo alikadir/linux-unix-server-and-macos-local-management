@@ -81,7 +81,13 @@ $ git status
 - ```git checkout main``` 
 - ```git merge feature/foo``` integrated all commits from ```feature/foo``` into ```main``` branch
 - ```Fast-forward``` iki branchde birinin son commitinde digerinin ilk commit'i basliyorsa merge islemi otomatik olarak fast-forward yapilir. fast-forward merge isleminden sonra merge commit'i olusmaz. commit zamanlari ic ice gecmis ise gene tarihsel olarak eklenir fakat birlestirme icin bir merge commit olusturulur. FastForward varsa merge commit'e gerek kalmamistir ama fastforward durumu yoksa mergecommit ile kodlar son hale getirilir.
+
 ```
+===== Github Merge Pull Request =====
+Create a merge commit
+All commits from this branch will be added to the base branch via a merge commit.
+=====================================
+
 39bf29d (HEAD -> main) Merge branch 'feature/foo'
 93c9dd1 Main 6 - Sixth commit
 0b1e41b (feature/foo) Foo 5 - Fifth commit
@@ -99,7 +105,13 @@ d36e7ca Main 1 - First commit
 ### Squash Merge
 - ```git checkout main``` 
 - ```git merge feature/foo --squash``` all commits from ```feature/foo``` combined into single commit to ```main``` branch
+
 ```
+===== Github Merge Pull Request =====
+Squash and merge
+The 5 commits from this branch will be combined into one commit in the base branch.
+=====================================
+
 d02ab58 (HEAD -> main) Merge Foo into Main as Squash
 93c9dd1 Main 6 - Sixth commit
 2975bc0 Main 5 - Fifth commit
@@ -113,9 +125,12 @@ d36e7ca Main 1 - First commit
 - ```git checkout feature/foo```
 - ```git rebase main``` integrated all commits from ```main``` into ```feature/foo``` branch as historical
 
-Rebase and Merge
 ```
-(END)
+===== Github Merge Pull Request =====
+Rebase and merge
+The 5 commits from this branch will be rebased and added to the base branch.
+=====================================
+
 4c5f772 (HEAD -> main, feature/foo) Foo 5 - Fifth commit
 d442aad Foo 4 - Fourth commit
 e9da15d Foo 3 - Third commit
