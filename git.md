@@ -124,6 +124,9 @@ d36e7ca Main 1 - First commit
 ## Rebase
 - ```git checkout feature/foo```
 - ```git rebase main``` integrated all commits from ```main``` into ```feature/foo``` branch as historical
+- ============ and Merge ================
+- ```git checkout main``` 
+- ```git merge feature/foo``` integrated all commits from ```feature/foo``` into ```main``` branch
 
 ```
 ===== Github Merge Pull Request =====
