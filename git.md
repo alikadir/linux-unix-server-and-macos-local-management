@@ -111,6 +111,8 @@ d36e7ca Main 1 - First commit
 ## Rebase
 - ```git checkout feature/foo```
 - ```git rebase main``` integrated all commits from ```main``` into ```feature/foo``` branch as historical
+
+Rebase and Merge
 ```
 (END)
 4c5f772 (HEAD -> main, feature/foo) Foo 5 - Fifth commit
