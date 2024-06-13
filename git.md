@@ -219,3 +219,23 @@ bf28b1e Main 4 - Fourth commit  2024-06-07 15:46:08
 e528c30 Main 2 - Second commit  2024-05-26 10:45:08
 d36e7ca Main 1 - First commit   2024-05-26 10:42:34
 ```
+```
+Rebase Conflict
+
+===================
+
+➜ DenemeApp git:(feature/refactor) git rebase main
+Auto-merging src/services/my-healt/index.js
+CONFLICT (content): Merge conflict in src/services/my-healt/index.js
+Auto-merging src/state/my-healt/my-healt/actions.js
+CONFLICT (content): Merge conflict in src/state/my-healt/my-healt/actions.js
+Auto-merging src/state/my-healt/my-healt/reducers.js
+CONFLICT (content): Merge conflict in src/state/my-healt/my-healt/reducers.js
+Auto-merging src/state/my-healt/my-healt/types.js
+error: could not apply 0c32dd2... chart system all refactor
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 0c32dd2... chart system all refactor
+```
