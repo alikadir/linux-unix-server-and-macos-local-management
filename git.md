@@ -127,7 +127,8 @@ Unmerged paths:
   (use "git add <file>..." to mark resolution)
 	both added:      foo.md
 
-no changes added to commit (use "git add" and/or "git commit -a")```
+no changes added to commit (use "git add" and/or "git commit -a")
+```
 
 ## Branch
 - ```git brach``` list all branchs
