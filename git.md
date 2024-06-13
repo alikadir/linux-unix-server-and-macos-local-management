@@ -82,44 +82,13 @@ $ git status
 - ```git merge feature/foo``` integrated all commits from ```feature/foo``` into ```main``` branch
 - ```Fast-forward``` iki branchde birinin son commitinde digerinin ilk commit'i basliyorsa merge islemi otomatik olarak fast-forward yapilir. fast-forward merge isleminden sonra merge commit'i olusmaz. commit zamanlari ic ice gecmis ise gene tarihsel olarak eklenir fakat birlestirme icin bir merge commit olusturulur. FastForward varsa merge commit'e gerek kalmamistir ama fastforward durumu yoksa mergecommit ile kodlar son hale getirilir.
 
-```
-===== Github Merge Pull Request =====
-Create a merge commit
-All commits from this branch will be added to the base branch via a merge commit.
-=====================================
 
-39bf29d (HEAD -> main) Merge branch 'feature/foo'
-93c9dd1 Main 6 - Sixth commit
-0b1e41b (feature/foo) Foo 5 - Fifth commit
-fa12284 Foo 4 - Fourth commit
-2975bc0 Main 5 - Fifth commit
-87baea6 Foo 3 - Third commit
-bf28b1e Main 4 - Fourth commit
-48703fc Foo 2 - Second commit
-c7a399e Foo 1 - First commit
-8e5a6f1 Main 3 - Third commit
-e528c30 Main 2 - Second commit
-d36e7ca Main 1 - First commit
-```
   
 ### Squash Merge
 - ```git checkout main``` 
 - ```git merge feature/foo --squash``` all commits from ```feature/foo``` combined into single commit to ```main``` branch
 
-```
-===== Github Merge Pull Request =====
-Squash and merge
-The 5 commits from this branch will be combined into one commit in the base branch.
-=====================================
 
-d02ab58 (HEAD -> main) Merge Foo into Main as Squash
-93c9dd1 Main 6 - Sixth commit
-2975bc0 Main 5 - Fifth commit
-bf28b1e Main 4 - Fourth commit
-8e5a6f1 Main 3 - Third commit
-e528c30 Main 2 - Second commit
-d36e7ca Main 1 - First commit
-```
 
 ## Rebase
 - ```git checkout feature/foo```
@@ -128,25 +97,6 @@ d36e7ca Main 1 - First commit
 - ```git checkout main``` 
 - ```git merge feature/foo``` integrated all commits from ```feature/foo``` into ```main``` branch
 
-```
-===== Github Merge Pull Request =====
-Rebase and merge
-The 5 commits from this branch will be rebased and added to the base branch.
-=====================================
-
-4c5f772 (HEAD -> main, feature/foo) Foo 5 - Fifth commit
-d442aad Foo 4 - Fourth commit
-e9da15d Foo 3 - Third commit
-0b6b702 Foo 2 - Second commit
-19850d4 Foo 1 - First commit
-93c9dd1 Main 6 - Sixth commit
-2975bc0 Main 5 - Fifth commit
-bf28b1e Main 4 - Fourth commit
-8e5a6f1 Main 3 - Third commit
-e528c30 Main 2 - Second commit
-d36e7ca Main 1 - First commit
-```
-
 ## Branch
 - ```git brach``` list all branchs
 - ```git branch <BranchName>``` create new branch but NOT switched the branch
@@ -154,7 +104,6 @@ d36e7ca Main 1 - First commit
 - ```git checkout <BranchName>``` switch this branch name
 - ```git checkout -b <BranchName>``` create branch and switch the branch
 - !!!```git checkout -b <BranchName> <SpecificCommitID>``` create branch from specific commit id and switch the branch
-
 
 ## Stash
 - ```git stash``` or ```git stash create``` create stash and all uncommited files move to stash
@@ -201,4 +150,71 @@ $ git push origin --delete 1.0.0
 ```bash
 $ git config --global user.email "alikadirbagcioglu@gmail.com"
 $ git config --global user.name "Ali Kadir Bagcioglu"
+```
+
+## Examples
+```
+===== Github Merge Pull Request =====
+Create a merge commit
+All commits from this branch will be added to the base branch via a merge commit.
+
+$ git checkout main
+$ git merge feature/foo
+=====================================
+
+39bf29d (HEAD -> main) Merge branch 'feature/foo'   2024-06-09 12:10:15
+93c9dd1 Main 6 - Sixth commit   2024-06-07 16:59:44
+0b1e41b (feature/foo) Foo 5 - Fifth commit   2024-06-07 16:17:15
+fa12284 Foo 4 - Fourth commit   2024-06-07 16:02:55
+2975bc0 Main 5 - Fifth commit   2024-06-07 15:59:08
+87baea6 Foo 3 - Third commit    2024-06-07 15:47:25
+bf28b1e Main 4 - Fourth commit  2024-06-07 15:46:08
+48703fc Foo 2 - Second commit   2024-06-07 15:44:03
+c7a399e Foo 1 - First commit    2024-06-07 15:43:14
+8e5a6f1 Main 3 - Third commit   2024-06-07 15:40:35
+e528c30 Main 2 - Second commit  2024-05-26 10:45:08
+d36e7ca Main 1 - First commit   2024-05-26 10:42:34
+```
+
+```
+===== Github Merge Pull Request =====
+Squash and merge
+The 5 commits from this branch will be combined into one commit in the base branch.
+
+$ git checkout main
+$ git merge feature/foo --squash
+=====================================
+
+d02ab58 (HEAD -> main) Merge Foo into Main as Squash   2024-06-09 19:56:17
+93c9dd1 Main 6 - Sixth commit   2024-06-07 16:59:44
+2975bc0 Main 5 - Fifth commit   2024-06-07 15:59:08
+bf28b1e Main 4 - Fourth commit  2024-06-07 15:46:08
+8e5a6f1 Main 3 - Third commit   2024-06-07 15:40:35
+e528c30 Main 2 - Second commit  2024-05-26 10:45:08
+d36e7ca Main 1 - First commit   2024-05-26 10:42:34
+```
+
+```
+===== Github Merge Pull Request =====
+Rebase and merge
+The 5 commits from this branch will be rebased and added to the base branch.
+
+$ git checkout feature/foo
+$ git rebase main
+
+$ git checkout main
+$ git merge feature/foo
+=====================================
+
+4c5f772 (HEAD -> main, feature/foo) Foo 5 - Fifth commit   2024-06-07 16:17:15
+d442aad Foo 4 - Fourth commit   2024-06-07 16:02:55
+e9da15d Foo 3 - Third commit    2024-06-07 15:47:25
+0b6b702 Foo 2 - Second commit   2024-06-07 15:44:03
+19850d4 Foo 1 - First commit    2024-06-07 15:43:14
+93c9dd1 Main 6 - Sixth commit   2024-06-07 16:59:44
+2975bc0 Main 5 - Fifth commit   2024-06-07 15:59:08
+bf28b1e Main 4 - Fourth commit  2024-06-07 15:46:08
+8e5a6f1 Main 3 - Third commit   2024-06-07 15:40:35
+e528c30 Main 2 - Second commit  2024-05-26 10:45:08
+d36e7ca Main 1 - First commit   2024-05-26 10:42:34
 ```
