@@ -142,7 +142,7 @@ mark them as resolved using git add
 
 ## Resolve Conflicts with Merge
 - fix conflicts and run ```git commit```
-- ```git merge --abort``` to abort the merge)
+- ```git merge --abort``` to abort the merge
 ```
 ➜  LearnGit git:(main) git merge feature/bar
 Auto-merging bar.md
