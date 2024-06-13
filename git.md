@@ -98,6 +98,37 @@ $ git status
 - ```git checkout main``` 
 - ```git merge feature/foo``` integrated all commits from ```feature/foo``` into ```main``` branch
 
+**Rebase Conflict Resolve**
+```
+➜  LearnGit git:(feature/foo) git rebase main
+Auto-merging foo.md
+CONFLICT (add/add): Merge conflict in foo.md
+error: could not apply c7a399e... Foo 1 - First commit
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply c7a399e... Foo 1 - First commit
+➜  LearnGit git:(e5237b4) ✗ git status
+interactive rebase in progress; onto e5237b4
+Last command done (1 command done):
+   pick c7a399e Foo 1 - First commit
+Next commands to do (4 remaining commands):
+   pick 48703fc Foo 2 - Second commit
+   pick 87baea6 Foo 3 - Third commit
+  (use "git rebase --edit-todo" to view and edit)
+You are currently rebasing branch 'feature/foo' on 'e5237b4'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+	both added:      foo.md
+
+no changes added to commit (use "git add" and/or "git commit -a")```
+
 ## Branch
 - ```git brach``` list all branchs
 - ```git branch <BranchName>``` create new branch but NOT switched the branch
