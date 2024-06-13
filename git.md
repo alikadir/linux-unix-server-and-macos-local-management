@@ -128,6 +128,10 @@ Unmerged paths:
 	both added:      foo.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
+➜  LearnGit git:(e5237b4) ✗ git rebase --continue
+foo.md: needs merge
+You must edit all merge conflicts and then
+mark them as resolved using git add
 ```
 
 ## Branch
