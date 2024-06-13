@@ -137,7 +137,7 @@ foo.md: needs merge
 You must edit all merge conflicts and then
 mark them as resolved using git add
 ```
-```git mergetool```
+```git mergetool``` and resolve conflict then ```git rebase --continue``` to next pick
 
 ## Branch
 - ```git brach``` list all branchs
