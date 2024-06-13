@@ -98,7 +98,7 @@ $ git status
 - ```git checkout main``` 
 - ```git merge feature/foo``` integrated all commits from ```feature/foo``` into ```main``` branch
 
-## Resolve Conflicts
+## Resolve Conflicts with Rebase
 
 - fix conflicts and then run ```git rebase --continue```
 - ```git rebase --skip``` to skip this patch
@@ -129,7 +129,7 @@ You are currently rebasing branch 'feature/foo' on 'e5237b4'.
 Unmerged paths:
   (use "git restore --staged <file>..." to unstage)
   (use "git add <file>..." to mark resolution)
-	both added:      foo.md
+	both added:      foo.md   <<<<<<<<<<<<<<<<<====================
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ➜  LearnGit git:(e5237b4) ✗ git rebase --continue
@@ -138,6 +138,32 @@ You must edit all merge conflicts and then
 mark them as resolved using git add
 ```
 ```git mergetool``` and resolve conflict then ```git rebase --continue``` to next pick
+
+
+## Resolve Conflicts with Merge
+- fix conflicts and run ```git commit```
+- ```git merge --abort``` to abort the merge)
+```
+➜  LearnGit git:(main) git merge feature/bar
+Auto-merging bar.md
+CONFLICT (add/add): Merge conflict in bar.md
+Automatic merge failed; fix conflicts and then commit the result.
+➜  LearnGit git:(main) ✗ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	both added:      bar.md   <<<<<<<<<<<<<<<<<====================
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+```git mergetool``` and resolve conflict then ```git commit -m 'Merged from feature/bar into main'``` 
 
 ## Branch
 - ```git brach``` list all branchs
