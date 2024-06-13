@@ -99,6 +99,9 @@ $ git status
 - ```git merge feature/foo``` integrated all commits from ```feature/foo``` into ```main``` branch
 
 **Rebase Conflict Resolve**
+- fix conflicts and then run ```git rebase --continue```
+- ```git rebase --skip``` to skip this patch
+- ```git rebase --abort``` to check out the original branch
 ```
 ➜  LearnGit git:(feature/foo) git rebase main
 Auto-merging foo.md
