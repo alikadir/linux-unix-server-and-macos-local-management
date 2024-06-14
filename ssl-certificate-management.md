@@ -199,7 +199,7 @@ $ openssl s_client -connect github.com:443
 ```
 
 ## Live SSL Config
-.crt file must become certificate chain 
+.crt file must become certificate chain for Nginx (Nginx needs certificate chain)
 ```
 server {
     listen 443 ssl http2;
