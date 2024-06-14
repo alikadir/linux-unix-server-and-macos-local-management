@@ -269,3 +269,24 @@ client_max_body_size 2M;
 ```bash
 $ vim /etc/nginx/nginx.conf
 ```
+#### CORS 
+
+Add that line in following Nginx alikadir.com config file
+
+```
+ location /
+    {
+      # Simple requests
+      if ($request_method ~* "(GET|POST)") {
+        add_header "Access-Control-Allow-Origin"  *;
+      }
+
+      # Preflighted requests
+      if ($request_method = OPTIONS ) {
+        add_header "Access-Control-Allow-Origin"  *;
+        add_header "Access-Control-Allow-Methods" "GET, POST, OPTIONS, HEAD";
+        add_header "Access-Control-Allow-Headers" "Authorization, Origin, X-Requested-With, Content-Type, Accept";
+        return 200;
+      }
+```
+
