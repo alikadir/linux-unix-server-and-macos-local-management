@@ -284,6 +284,21 @@ initial password at ```/var/jenkins_home/secrets/initialAdminPassword```
 $ docker run -d -p 8080:8080 -v $HOME/jenkins_home:/var/jenkins_home jenkins/jenkins:lts
 ```
 
+### Jenkins (docker in docker)
+install jenkins on docker then install docker in jenkins container
+
+--privileged = require for docker in docker 
+```
+$ docker run --privileged  -d -p 8080:8080 -v $HOME/jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+$ docker exec -u root -it 010101010101 /bin/bash
+jenkins_container_010101010101-> $ #install docker from https://docs.docker.com/engine/install/debian
+jenkins_container_010101010101-> $ service docker start #/etc/init.d/docker: 62: ulimit: error setting limit (Invalid argument)
+jenkins_container_010101010101-> $ sed -i 's/ulimit -Hn/# ulimit -Hn/g' /etc/init.d/docker;
+jenkins_container_010101010101-> $ service docker restart
+jenkins_container_010101010101-> docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+```
+
 ## Sonarqube
 default user and password are **admin**
 ```
