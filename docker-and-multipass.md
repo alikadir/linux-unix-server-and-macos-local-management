@@ -119,6 +119,11 @@ $ docker inspect 62862d1effe1 | grep 'Mount' -n
 ```bash
 $ docker exec -it <CONTAINER_ID> /bin/bash
 ```
+if require ```sudo``` command use ```root``` user
+
+```bash
+docker exec -u root -it <CONTAINER_ID> /bin/bash
+```
 
 ### Remove container
 
