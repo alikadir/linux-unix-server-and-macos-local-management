@@ -297,6 +297,7 @@ jenkins_container_010101010101-> $ sed -i 's/ulimit -Hn/# ulimit -Hn/g' /etc/ini
 jenkins_container_010101010101-> $ service docker restart
 jenkins_container_010101010101-> docker ps
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+jenkins_container_010101010101-> $ usermod -a -G docker jenkins #add docker user to group
 ```
 
 ## Sonarqube
