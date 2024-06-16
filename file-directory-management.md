@@ -61,6 +61,17 @@ $ man curl | grep "post"
 $ grep console.log -r . --exclude-dir=node_modules
 ```
 
+### Bulk (Multi-line) insert to file 
+```
+$ tee Dockerfile << EOF
+  line-1
+  Line-2
+  Line-3
+  Line-4
+EOF
+```
+
+
 ### Manipulating data with awk in file 
 Awk is a scripting language used for manipulating data and generating reports.
 ```
@@ -83,6 +94,7 @@ $ awk '/manager/ {print}' employee.txt
     varun manager sales 50000
     amit manager account 47000 
 ```
+
 
 
 ### View file content
