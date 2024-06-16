@@ -63,7 +63,7 @@ $ grep console.log -r . --exclude-dir=node_modules
 
 ### Bulk (Multi-line) insert to file 
 ```
-$ tee Dockerfile << EOF
+$ tee test.txt << EOF
   line-1
   Line-2
   Line-3
