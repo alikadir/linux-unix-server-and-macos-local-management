@@ -285,19 +285,37 @@ $ docker run -d -p 8080:8080 -v $HOME/jenkins_home:/var/jenkins_home jenkins/jen
 ```
 
 ### Jenkins (docker in docker)
-install jenkins on docker then install docker in jenkins container
+jenkins run in docker and each job run in docker 
 
---privileged = require for docker in docker 
+--privileged = not force use sudo (already not use sudo in docker) 
+1) Create Dockerfile with install and ser permission for docker in jenkins  
 ```
-$ docker run --privileged  -d -p 8080:8080 -v $HOME/jenkins_home:/var/jenkins_home jenkins/jenkins:lts
-$ docker exec -u root -it 010101010101 /bin/bash
-jenkins_container_010101010101-> $ #install docker from https://docs.docker.com/engine/install/debian
-jenkins_container_010101010101-> $ service docker start #/etc/init.d/docker: 62: ulimit: error setting limit (Invalid argument)
-jenkins_container_010101010101-> $ sed -i 's/ulimit -Hn/# ulimit -Hn/g' /etc/init.d/docker;
-jenkins_container_010101010101-> $ service docker restart
-jenkins_container_010101010101-> docker ps
-CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
-jenkins_container_010101010101-> $ usermod -a -G docker jenkins #add docker user to group
+$ tee Dockerfile << EOF
+  FROM jenkins/jenkins:lts-jdk17
+  USER root
+  RUN apt update && curl -fsSL https://get.docker.com | sh
+  RUN usermod -aG docker jenkins
+  USER jenkins
+EOF
+```
+2) Build Dockerfile
+```
+$ docker build . -t my_jenkins_with_docker
+```
+3) Run DockerImage
+```
+$ docker run -d -it --restart=always -p 8080:8080 -v jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock my_jenkins_with_docker
+```
+4) Jenkinsfile using
+```
+pipeline {
+    agent {
+      docker { 
+        image 'mcr.microsoft.com/dotnet/sdk:6.0' 
+        args '--privileged -v /var/run/docker.sock:/var/run/docker.sock'
+      }
+    }
+    stages {
 ```
 
 ## Sonarqube
