@@ -217,6 +217,9 @@ server {
 ```
 ### Chain certificate example
 
+![Postman](https://raw.githubusercontent.com/alikadir/linux-unix-server-and-macos-local-management/main/images/ssl-postman.png)
+
+
 MyCertificate.crt + GlobalSignIntermediateCertificate.crt + GlobalSignRootCertificate.crt
 
 ```
