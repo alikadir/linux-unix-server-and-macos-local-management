@@ -44,3 +44,4 @@ $ cat /etc/os-release
 - [Zip and Tar and Tar.gz](zip-tar-tar.gz.md)
 - [Load Test and Resource Monitoring](load-test-and-resource-monitoring.md)
 - [Basic Bash commands](bash-commands.md)
+- [Time and TimeZone](time-timezone.md)
