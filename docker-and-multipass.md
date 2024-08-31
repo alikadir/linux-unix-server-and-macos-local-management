@@ -90,7 +90,27 @@ $ ifconfig
 ------
 
 ## Docker
-for install docker on Ubuntu visit [link](https://docs.docker.com/engine/install/ubuntu/) 
+
+### Install Docker at all Linux Distributions 
+```
+$ sudo apt update
+$ sudo apt upgrade
+```
+```
+$ curl -sSL https://get.docker.com | sh
+```
+```
+$ sudo usermod -aG docker $USER
+```
+```
+$ logout
+```
+```
+$ groups
+```
+```
+$ docker run hello-world
+```
 
 ### Get all containers
 
