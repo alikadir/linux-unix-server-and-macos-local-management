@@ -211,6 +211,28 @@ $ docker login --username USER --password PASSWORD
 $ docker push alikadir/devops-sample-api-project --all-tags
 ```
 
+## Move docker image to another server
+
+### on the Server
+[show docker images](docker-and-multipass.md#show-docker-images)
+
+-o = output
+```bash
+$ docker save -o ~/Desktop/my-container.tar <IMAGE_ID>
+```
+send another server with [scp](file-transfer.md)
+```bash
+$ scp scp -rp ~/Desktop/my-container.tar root@111.111.111.111:/var/www/alikadir.com/
+```
+### on Another Server (111.111.111.111)
+-i = import
+```bash
+$ docker load -i /var/www/alikadir.com/my-container.tar
+```
+```bash
+$ docker images --all
+```
+
 
 # Dockers
 -d = detach container
