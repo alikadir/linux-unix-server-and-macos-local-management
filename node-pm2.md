@@ -29,6 +29,22 @@ detect **.nvmrc** file in the project folder and auto switch written nodejs vers
 $ sudo snap install node --classic
 ```
 
+## Install nodejs on Server via Apt with NPM
+```bash
+$ sudo apt install npm
+$ npm --version
+9.2.0
+
+$ sudo npm install -g n
+$ n latest
+$ hash -r  #If "node --version" shows the old version then start a new shell, or reset the location hash with: hash -r  (for bash, zsh, ash, dash, and ksh)
+$ node --version
+22.8.0
+$ npm --version
+10.8.2
+```
+
+
 ## Install nodejs (LTS) on Server (Ubuntu) via Apt
 ```bash
 $ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
