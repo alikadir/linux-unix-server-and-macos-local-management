@@ -182,6 +182,21 @@ $ docker logs postgresql
 ```bash
 $ docker update --restart always postgresql 
 ```
+## Docker Network
+### Create Network
+```bash
+$ docker network create my-network
+```
+### Run container on the network
+```bash
+$ docker run -d --name my-redis --network my-network -p 6379:6379 redis
+$ docker run -d --name my-app --newtork my-network -p 3000:3000 -e REDIS_CONNECTION="my-redis:6379" 9ef073ac035f9
+```
+### Connect the container on the Host OS
+```bash
+$ nc localhost:6379 -v
+localhost [127.0.0.1] 6379 open
+```
 
 ## Docker image
 
