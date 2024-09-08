@@ -28,7 +28,10 @@ $ apt install netcat
 ```
 
 ### Using
--v = verbose
+-v, --verbose  = verbose
+
+-z, --zero = zero-I/O mode (used for scanning), only print port status and close 
+
 ```bash
 $ nc localhost 6379 -v
 ```
@@ -41,8 +44,10 @@ $ nc 192.168.1.117 6379 -v
 ### Port scan
 -v = verbose
 
+-z, --zero = zero-I/O mode (used for scanning), only print port status and close 
+
 check port between 1 and 9999
 ```bash
-$ nc 192.168.1.117 1-9999 -v
+$ nc 192.168.1.117 1-9999 -vz
 ```
 
