@@ -2,13 +2,15 @@
 
 # Port Check
 
-## Find Process ID that using the port via lsof
+## Find Process ID that using the port with lsof
 find process id with **lsof** command 
 
-
+### Install
 ``` bash
 $ apt install lsof
 ```
+
+### Using
 ```bash
 $ lsof -i:6379
 
@@ -20,10 +22,12 @@ com.docke 87127 alikadir  147u  IPv6 0x929618d01a59d9b4      0t0  TCP *:6379 (LI
 
 check open/close status with netcat (**nc**)
 
+### Install
 ```bash
 $ apt install netcat 
 ```
 
+### Using
 -v = verbose
 ```bash
 $ nc localhost 6379 -v
@@ -33,3 +37,12 @@ $ nc 192.168.1.117 6379 -v
 
 192.168.1.117 [192.168.1.117] 6379 open
 ```
+
+### Port scan
+-v = verbose
+
+check port between 1 and 9999
+```bash
+$ nc 192.168.1.117 1-9999 -v
+```
+
