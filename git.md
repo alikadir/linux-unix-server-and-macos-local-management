@@ -166,7 +166,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```git mergetool``` and resolve conflict then ```git commit -m 'Merged from feature/bar into main'``` 
 
 ## Branch
-- ```git brach``` list all branchs
+- ```git branch``` list all branchs
 - ```git branch <BranchName>``` create new branch but NOT switched the branch
 - ```git branch -D <BranchName>``` remove the branch 
 - ```git checkout <BranchName>``` switch this branch name
