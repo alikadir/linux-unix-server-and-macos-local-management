@@ -67,7 +67,7 @@ $ systemctl enable nodejs-alikadir-com.service --now
 
 ### Services list filtered with nginx
 ```bash
-$ systemctl 💡 | grep nginx
+$ systemctl | grep nginx
 ```
 
 ### Start, stop and restart service
