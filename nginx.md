@@ -258,6 +258,13 @@ server {
 ### Cache 
 
 ```
+upstream BACKEND {
+    #least_conn;
+    ip_hash;
+    server 111.30.1.15:80  max_fails=3 fail_timeout=30s;
+    server 111.30.1.16:80  max_fails=3 fail_timeout=30s;
+    server 111.30.1.17:80  max_fails=3 fail_timeout=30s;
+}
 server {
    
     set $bypass 0;
@@ -292,6 +299,27 @@ server {
 	    proxy_ignore_headers Set-Cookie;
 	    proxy_cache_bypass $bypass;
       }
+
+    # reverse proxy
+    location / {
+	#limit_req zone=ratelimit;
+        #proxy_cache my_cache;
+        #proxy_cache_use_stale error timeout updating http_500 http_502 http_503 http_504;
+        #proxy_cache_lock on;
+        #proxy_ignore_headers Set-Cookie;
+        proxy_pass http://BACKEND;
+        proxy_ssl_server_name on;
+        proxy_ssl_verify off;
+        #proxy_ssl_trusted_certificate /etc/letsencrypt/live/alikadir.com/fullchain.pem;
+        proxy_ssl_trusted_certificate /etc/nginx/conf.d/ssl/star.alikadir.com.pem;
+	#proxy_buffering off;
+        proxy_buffer_size 512m;
+        proxy_buffers 16 512m;
+        proxy_busy_buffers_size 512m;
+        proxy_max_temp_file_size 8192m;
+        proxy_ignore_client_abort on;
+	#proxy_set_header Host $host;
+    }
 }
 ```
 
