@@ -11,6 +11,11 @@ $ sudo apt update
 $ sudo apt install nginx
 ```
 
+### Install Nginx on MacOS
+```bash
+$ brew install nginx
+```
+
 ### Allow app or port on firewall
 
 ```bash
@@ -178,14 +183,6 @@ server {
     }
     
 }
-
-```
-
-# on MacOS
-
-### Install Nginx
-```bash
-$ brew install nginx
 ```
 
 ### Start Nginx
@@ -322,6 +319,49 @@ server {
     }
 }
 ```
+
+### Rate Limiting
+```
+http {
+   
+    # Limit to 10 requests per minute per IP address
+    limit_req_zone $binary_remote_addr zone=myratelimit:10m rate=10r/m;
+
+    server {
+
+      
+        location / {
+            # Lower rate limit (10 requests per minute)
+            limit_req zone=myratelimit burst=5 nodelay;
+
+            # standard proxy settings
+            proxy_pass http://127.0.0.1:8080;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+        # Define a custom error page for rate-limited requests
+        error_page 503 /rate_limit.html;
+        location = /rate_limit.html {
+            internal;
+            root /var/www/example.com/errors;
+        }
+
+    }
+}
+```
+_$binary_remote_addr_ = Represents the client’s IP address.
+
+_zone=myratelimit:10m_ = Creates a shared memory zone named myratelimit with 10MB storage (enough for ~160,000 IP addresses).
+
+_rate=10r/m_ = Limits requests to 10 per minute per IP.
+
+_zone=myratelimit_ = Refers to the previously defined rate-limiting zone.
+
+_burst=5_  = Allows 5 extra requests to exceed the rate limit in bursts, queuing them.
+
+_nodelay_ = Ensures requests exceeding the limit are rejected without delay.
 
 
 ### Troubleshooting
