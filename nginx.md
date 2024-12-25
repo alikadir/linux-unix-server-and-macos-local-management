@@ -300,7 +300,7 @@ server {
 	    proxy_cache_bypass $bypass;
       }
 
-    # reverse proxy
+
     location / {
 	#limit_req zone=ratelimit;
         #proxy_cache my_cache;
