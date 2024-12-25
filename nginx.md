@@ -267,32 +267,31 @@ server {
 
     # 5 dakika cache
     location ~  (/Banner/GetBannerList|/Cities/Get|/HomeHealth/GetMainCategories) {
-
-		proxy_pass http://BACKEND;
-		proxy_ssl_name $host;
-    proxy_cache my_cache;
-		proxy_cache_use_stale error timeout updating http_500 http_502 http_503 http_504;
-		proxy_cache_lock on;
-		proxy_cache_valid 200 5m;
-		proxy_cache_key $proxy_host$request_uri$args;
-    proxy_ignore_headers  "Cache-Control";
-    proxy_ignore_headers X-Accel-Expires;
-    proxy_hide_header "Cache-Control";
-    proxy_hide_header Pragma;
-    proxy_hide_header Server;
-    add_header Cache-Control public;
-    add_header Pragma public;
-    proxy_set_header Host $host;
-    proxy_ignore_headers Expires;
-    proxy_hide_header Request-Context;
-    proxy_hide_header X-Powered-By;
-    proxy_cache_revalidate on;
-    proxy_hide_header X-AspNet-Version;
-    proxy_hide_header X-AspNetMvc-Version;
-    proxy_hide_header Set-Cookie;
-    proxy_ignore_headers Set-Cookie;
-    proxy_cache_bypass $bypass;
-	}
+	    proxy_pass http://BACKEND;
+	    proxy_ssl_name $host;
+	    proxy_cache my_cache;
+	    proxy_cache_use_stale error timeout updating http_500 http_502 http_503 http_504;
+	    proxy_cache_lock on;
+	    proxy_cache_valid 200 5m;
+	    proxy_cache_key $proxy_host$request_uri$args;
+	    proxy_ignore_headers  "Cache-Control";
+	    proxy_ignore_headers X-Accel-Expires;
+	    proxy_hide_header "Cache-Control";
+	    proxy_hide_header Pragma;
+	    proxy_hide_header Server;
+	    add_header Cache-Control public;
+	    add_header Pragma public;
+	    proxy_set_header Host $host;
+	    proxy_ignore_headers Expires;
+	    proxy_hide_header Request-Context;
+	    proxy_hide_header X-Powered-By;
+	    proxy_cache_revalidate on;
+	    proxy_hide_header X-AspNet-Version;
+	    proxy_hide_header X-AspNetMvc-Version;
+	    proxy_hide_header Set-Cookie;
+	    proxy_ignore_headers Set-Cookie;
+	    proxy_cache_bypass $bypass;
+      }
 }
 ```
 
