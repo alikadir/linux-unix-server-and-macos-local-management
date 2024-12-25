@@ -351,17 +351,17 @@ http {
     }
 }
 ```
-_$binary_remote_addr_ = Represents the client’s IP address.
+**$binary_remote_addr** = Represents the client’s IP address.
 
-_zone=myratelimit:10m_ = Creates a shared memory zone named myratelimit with 10MB storage (enough for ~160,000 IP addresses).
+**zone=myratelimit:10m** = Creates a shared memory zone named myratelimit with 10MB storage (enough for ~160,000 IP addresses).
 
-_rate=10r/m_ = Limits requests to 10 per minute per IP.
+**rate=10r/m** = Limits requests to 10 per minute per IP.
 
-_zone=myratelimit_ = Refers to the previously defined rate-limiting zone.
+**zone=myratelimit** = Refers to the previously defined rate-limiting zone.
 
-_burst=5_  = Allows 5 extra requests to exceed the rate limit in bursts, queuing them.
+**burst=5**  = Allows 5 extra requests to exceed the rate limit in bursts, queuing them.
 
-_nodelay_ = Ensures requests exceeding the limit are rejected without delay.
+**nodelay** = Ensures requests exceeding the limit are rejected without delay.
 
 
 ### Troubleshooting
