@@ -51,6 +51,8 @@ Mar 28 13:23:02 AKBTestServer systemd[1]: nginx.service: Control process exited,
 
 ### Setup a site on Nginx 
 
+!!! you can easily configure with https://nginxconfig.org
+
 create config file in sites-available directory
 
 ```bash
@@ -219,40 +221,80 @@ Layer 4 (L4) = TCP/UDP
 upstream myproject {   
     server 127.0.0.1:8081;
     server 127.0.0.1:8082;
-    server 127.0.0.1:8083;
-    server 127.0.0.1:8084;
+    server 127.0.0.1:8083 max_fails=3 fail_timeout=30s;
+    server 127.0.0.1:8084 max_fails=3 fail_timeout=30s;
     server 127.0.0.1:8085;
     server 10.114.0.5:8086;
     server 10.114.0.5:8087;
 }
 
 server {
-        listen 80;
-        listen [::]:80;
-        server_name test1.gramofon.net;
-        return 301 https://$host$request_uri;
+    listen 80;
+    listen [::]:80;
+    server_name test1.gramofon.net;
+    return 301 https://$host$request_uri;
 }
 
 
 server {
-       listen 443 ssl;
+   listen 443 ssl;
 
-       ssl_certificate /etc/ssl/test1/certificate.crt;
-       ssl_certificate_key /etc/ssl/test1/private.key;
+   ssl_certificate /etc/ssl/test1/certificate.crt;
+   ssl_certificate_key /etc/ssl/test1/private.key;
 
-       server_name test1.gramofon.net;
+   server_name test1.gramofon.net;
 
-       root /var/www/html/test1;
-       index index.html;
+   root /var/www/html/test1;
+   index index.html;
 
-       location / {
-              proxy_set_header   X-Forwarded-For $remote_addr;
-              proxy_set_header   Host $http_host;
-              proxy_pass         http://myproject;
-    }
+   location / {
+      proxy_set_header   X-Forwarded-For $remote_addr;
+      proxy_set_header   Host $http_host;
+      proxy_pass         http://myproject;
+   }
 }  
 ```
 
+### Cache 
+
+```
+server {
+   
+    set $bypass 0;
+    if ($remote_addr ~ "^(111.30.1.*)$") {
+        set $bypass $http_cache_purge;
+    }
+
+    # 5 dakika cache
+    location ~  (/Banner/GetBannerList|/Cities/Get|/HomeHealth/GetMainCategories) {
+
+		proxy_pass http://BACKEND;
+		proxy_ssl_name $host;
+    proxy_cache my_cache;
+		proxy_cache_use_stale error timeout updating http_500 http_502 http_503 http_504;
+		proxy_cache_lock on;
+		proxy_cache_valid 200 5m;
+		proxy_cache_key $proxy_host$request_uri$args;
+    proxy_ignore_headers  "Cache-Control";
+    proxy_ignore_headers X-Accel-Expires;
+    proxy_hide_header "Cache-Control";
+    proxy_hide_header Pragma;
+    proxy_hide_header Server;
+    add_header Cache-Control public;
+    add_header Pragma public;
+    proxy_set_header Host $host;
+    proxy_ignore_headers Expires;
+    proxy_hide_header Request-Context;
+    proxy_hide_header X-Powered-By;
+    proxy_cache_revalidate on;
+    proxy_hide_header X-AspNet-Version;
+    proxy_hide_header X-AspNetMvc-Version;
+    proxy_hide_header Set-Cookie;
+    proxy_ignore_headers Set-Cookie;
+    proxy_cache_bypass $bypass;
+	}
+}
+```
 
 
 ### Troubleshooting
