@@ -84,6 +84,15 @@ general service path ```/etc/systemd/system/kestrel.alikadir.com.service```
 
  [To remove sudo password requirement on systemctl operations](user-management.md#sudo-operation-without-ask-password)
 
+ ### Show Service Config 
+ ```bash
+$ systemctl cat kestrel.alikadir.com.service
+```
+### Service Status
+```bash
+$ systemctl status kestrel.alikadir.com.service
+```
+
 ## JournalCtl
 
 **journalctl** is using for service log management.
@@ -119,10 +128,10 @@ $ launchctl list | grep <service_name>
 $ launchctl start <service_name>
 ```
 ```bash
-$ systemctl stop <service_name>
+$ launchctl stop <service_name>
 ```
 ```bash
-$ systemctl restart <service_name>
+$ launchctl restart <service_name>
 ```
 
 ### Services status
