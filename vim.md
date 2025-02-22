@@ -1,6 +1,6 @@
 [<< Back](README.md)
 
-# Vi / Vim
+# Vi / Vim / NeoVim (nvim)
 
 ### Copy, Cut, Paste
 - press ```y``` to yank (copy) in terminal context
