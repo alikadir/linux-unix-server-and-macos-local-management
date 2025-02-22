@@ -22,7 +22,7 @@ $ cat /etc/os-release
 ## Index
 - [File and Directory Management](file-directory-management.md)
 - [Redirection method in Linux and Unix](redirection.md)
-- [Vi / Vim](vim.md)
+- [Vi / Vim / NeoVim (nvim)](vim.md)
 - [Process Managemet](process-management.md)
 - [User Managemet](user-management.md)
 - [User Permission](user-permission.md)
