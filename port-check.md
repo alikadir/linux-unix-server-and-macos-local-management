@@ -18,6 +18,22 @@ COMMAND     PID     USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
 com.docke 87127 alikadir  147u  IPv6 0x929618d01a59d9b4      0t0  TCP *:6379 (LISTEN)
 ```
 
+## Check port open/close status with nmap
+
+### Install 
+```bash
+$ apt install nmap
+```
+
+### Using
+```bash
+$ nmap www.geeksforgeeks.org
+```
+```bash
+$ nmap 192.168.1.130
+```
+
+
 ## Check port open/close status with netcat
 
 check open/close status with netcat (**nc**)
