@@ -12,7 +12,7 @@ https://github.com/WiringPi/WiringPi-Node/tree/master
 ARMbian OS "https://www.armbian.com/orange-pi-zero-3"
 
 #### Connect with SSH with HostName
-install Multicast DNS (mDNS) with avahi
+install Multicast DNS (mDNS) with avahi (Avahi comes as default on RaspianOS)
 ```bash
 $ sudo apt update
 $ sudo apt install avahi-daemon -y
