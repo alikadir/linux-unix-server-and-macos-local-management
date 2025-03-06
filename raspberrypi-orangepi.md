@@ -19,5 +19,8 @@ $ sudo apt install avahi-daemon -y
 $ sudo systemctl enable --now avahi-daemon
 ```
 
+do you have connection problem with hostname, restart the **avahi** service ```$ sudo systemctl restart avahi-daemon ```
+
+
 #### wiringPi for OrangePi
 https://github.com/orangepi-xunlong/wiringOP
