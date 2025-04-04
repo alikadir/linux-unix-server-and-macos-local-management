@@ -83,6 +83,11 @@ $ chmod -R +x Desktop
 $ chmod a+rwx,u-wx,g-rx,o-rw Desktop
 ```
 
+### Change owner the file/directory
+```bash
+$ sudo chown $USER:$USER Desktop
+```
+
 ### Set permission with number
 
 | Value | Permission  | Description                            |
