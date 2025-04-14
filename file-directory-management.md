@@ -11,6 +11,12 @@ specify file type and name
 ```
 $ find MyAwesomeProject -type f -name "*.json"
 ```
+
+delete find files 
+```
+$ find MyAwesomeProject -type f -name "*.json" -delete
+```
+
 exclude some folders
 ```bash
 $ find MyAwesomeProject -type f -name "*.json" -not -path "*/node_modules/*"
