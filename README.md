@@ -47,3 +47,4 @@ $ cat /etc/os-release
 - [Time and TimeZone](time-timezone.md)
 - [Port Check](port-check.md)
 - [RaspberryPi - OrangePi](raspberrypi-orangepi.md)
+- [Server Status Notify Telegram](server-status-notify-telegram.sh)
