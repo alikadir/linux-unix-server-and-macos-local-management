@@ -112,6 +112,21 @@ $ groups
 $ docker run hello-world
 ```
 
+### Troubleshooting 
+```
+$ docker run hello-world
+docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+
+Run 'docker run --help' for more information
+```
+reboot Linux and check docker service status
+```
+$ sudo reboot
+---
+$ sudo systemctl status docker
+```
+
+
 ### Get all containers
 
 ```bash
