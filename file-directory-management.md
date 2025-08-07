@@ -213,6 +213,11 @@ write found.log
 
 pass stdout for line count with wc -l
 
+### Disk write speed test
+```bash
+$ sync; dd if=/dev/zero of=test.tmp bs=100M count=1 oflag=dsync
+```
+
 ```bash
 $ grep 'deneme' ~/stdout.log | tee ~/found.log | wc -l
 ```
