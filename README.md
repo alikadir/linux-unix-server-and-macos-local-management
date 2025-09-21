@@ -48,3 +48,4 @@ $ cat /etc/os-release
 - [Port Check](port-check.md)
 - [RaspberryPi - OrangePi](raspberrypi-orangepi.md)
 - [Server Status Notify Telegram](server-status-notify-telegram.sh)
+- [Serial Port Communication](serial-port.md)
