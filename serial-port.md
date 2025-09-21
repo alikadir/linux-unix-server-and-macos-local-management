@@ -21,3 +21,11 @@ $ screen /dev/cu.usbserial-0001 115200
 ```
 
 for exit the screen press **Control + A and then press K**
+
+### UART Communication on CoolTerm App
+- Receive data and Show Hex, Text or Chart
+- Send Text
+- Send Hex
+- Send File 
+- Receive File
+- Capture and Save received data (start capture and stop capture)
