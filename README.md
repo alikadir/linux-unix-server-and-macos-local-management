@@ -50,3 +50,4 @@ $ cat /etc/os-release
 - [Server Status Notify Telegram](server-status-notify-telegram.sh)
 - [Serial Port Communication](serial-port.md)
 - [Sub Shell $(command)](subshell.md)
+- [Network Managemet](network.md)
