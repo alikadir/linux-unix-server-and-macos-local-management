@@ -39,6 +39,16 @@ https://github.com/orangepi-xunlong/wiringOP
 
 ## Check Periodicly Network Problem 
 ```
+$ sudo crontab -e
+
+*/15 * * * * /home/alikadir/reset-ip.sh >> /home/alikadir/cron.log 2>&1
+
+$ chmod +x /home/alikadir/reset-ip.sh
+```
+
+
+reset-ip.sh file
+```
 #!/bin/bash
 
 # Komutların tam yollarını belirleyerek Cron'un hata payını sıfıra indiriyoruz
