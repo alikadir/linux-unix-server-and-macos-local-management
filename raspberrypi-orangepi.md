@@ -35,3 +35,29 @@ ssh: Could not resolve hostname orangepi: nodename nor servname provided, or not
 
 #### wiringPi for OrangePi
 https://github.com/orangepi-xunlong/wiringOP
+
+
+## Check Periodicly Network Problem 
+```
+#!/bin/bash
+
+# Komutların tam yollarını belirleyerek Cron'un hata payını sıfıra indiriyoruz
+PING="/usr/bin/ping"
+NMCLI="/usr/bin/nmcli"
+SLEEP="/bin/sleep"
+DATE="/bin/date"
+
+# İnterneti 3 kez ping atarak kontrol et
+if ! $PING -c 3 8.8.8.8 &> /dev/null
+then
+    echo "$($DATE): İnternet koptu! Sistem resetleniyor..."
+    $NMCLI device disconnect end0
+    $SLEEP 2
+    $NMCLI device connect end0
+    echo "$($DATE): Bağlantı tazelendi."
+else
+    # Log dosyasının şişmemesi için her şey yolundaysa çıktı vermeyebilirsin
+    # Veya sadece kontrol edildiğini belirtebilirsin
+    echo "$($DATE): İnternet aktif, işlem gerekmiyor."
+fi
+```
