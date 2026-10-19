@@ -51,6 +51,19 @@ then, change a line you want with following line in vim editor
 @reboot sleep 60 && /bin/python3 / home/Documents/python-scripts/production/files_auto
 ```
 
+Every 1 minute
+```bash
+*/1 * * * * /bin/bash /home/alikadir/server-status-notify-telegram.sh
+```
+Every 1 hour
+```bash
+0 */1 * * * /bin/bash /home/alikadir/server-status-notify-telegram.sh
+```
+Every at 18:30 
+```bash
+30 18 * * * /bin/bash /home/alikadir/server-status-notify-telegram.sh
+```
+
 ### Remove existing configuration for current user  
 ```bash
 $ crontab -r
