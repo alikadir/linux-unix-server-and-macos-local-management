@@ -1,6 +1,6 @@
 [<< Back](README.md)
 
-# User Permission
+# File and Folder Permission
 https://chmodcommand.com
 
 ### Show folder and files permission
