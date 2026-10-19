@@ -21,11 +21,11 @@ $ cat /etc/os-release
 
 ## Index
 - [File and Directory Management](file-directory-management.md)
+- [File and Directory Permission](file-and-directory-permission.md)
 - [Redirection method in Linux and Unix](redirection.md)
 - [Vi / Vim / NeoVim (nvim)](vim.md)
 - [Process Managemet](process-management.md)
 - [User Managemet](user-management.md)
-- [User Permission](user-permission.md)
 - [Service Management - systemd](service-management.md)
 - [Cron jobs](cron-jobs.md)
 - [Package Management - apt - snap](package-management.md)
